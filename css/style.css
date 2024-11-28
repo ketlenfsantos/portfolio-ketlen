@@ -1,0 +1,110 @@
+
+@import './global.css';
+@import './header.css';
+@import './introduction.css';
+@import './about.css';
+@import './habilidades.css';
+@import './portfolio.css';
+@import './footer.css';
+@import './menu-mobile.css';
+@import './portfolio1.css';
+
+
+
+
+@font-face {
+    font-family: 'Montserrat Alt1';
+    src: url('/fonts/MontserratAlt1-Bold.woff2') format('woff2'),
+         url('/fonts/MontserratAlt1-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body, html {
+    background-color: #170B30;
+    /* height: 100%; */
+    margin:0;
+    padding:0 ;
+    font-family: 'Montserrat', Arial, Helvetica,  sans-serif; 
+    overflow-x: hidden; /* Impede rolagem lateral */
+    overflow-x: hidden; /* Impede rolagem lateral */
+    -webkit-font-smooothing: antialiased;
+    min-height: 2000px;
+    color: white;
+
+  }
+
+  h1,h2,h3,p{
+    margin: 0px;
+  }
+
+  li , u, a  {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
+
+  img{
+    max-width: 100%; /*n cresce infinitamente a imagem*/
+    display: block;
+  }
+
+  .fadeInDown {
+    transform: translate3d(0, -20px, 0);
+}
+
+.fadeInUp {
+    transform: translate3d(0, 20px, 0);
+}
+
+.fadeInRight {
+    transform: translate3d(20px, 0, 0);
+}
+
+.fadeInLeft {
+    transform: translate3d(-20px, 0, 0);
+}
+
+[data-anime] {
+    opacity: 0;
+}
+
+.anime {
+    opacity: 1;
+    transform: none;
+    transition: transform 0.8s, opacity 0.8s;
+}
+
+  .divider {
+    width: 100vw; /* Ocupa a largura total da tela */
+    height: 35px; /* Defina a altura desejada */
+    background: linear-gradient(to right, #FF007A, #7B42FF, #00C9FF); /* Gradiente de cores */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.firstPage{
+  background:linear-gradient(to right, #FF007A, #7B42FF, #00C9FF); /* Gradiente de cores */
+  height: 40rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw; 
+  height: 100vh;
+ 
+}
+
+
+
+@media (max-width: 1000px){
+  .firstPage{
+      height: 130vh;
+  }
+}
+
+@media (max-width: 700px){
+  .firstPage{
+    height: 125vh;
+  }
+}

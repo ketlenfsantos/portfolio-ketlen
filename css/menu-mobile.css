@@ -1,0 +1,93 @@
+.mobile-menu-icon {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: none; /* Escondido por padrão fora do mobile */
+}
+
+.containerTwoMobile {
+    display: none; /* Esconde o menu por padrão */
+    background-color: #170B30;
+    border: 2px solid rgb(142, 75, 241);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+   
+}
+
+.containerTwoMobile ul {
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+    
+
+}
+
+.containerTwoMobile ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Fira Sans', sans-serif;
+    
+    
+}
+
+
+.containerTwoMobile ul li a:hover {
+    color: rgb(216, 154, 249);
+    transition: 0.3s ease-in;
+    background: rgba(255, 255, 255, 0.105);
+    padding: 15px;
+    border-radius: 15px;
+    
+}
+
+
+
+#xis{
+    background: none;
+    border: none;
+    color: white;
+    width: 10px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 220px;
+    top: 25px;
+    cursor: pointer;
+}
+
+#xis:hover{
+    color: rgb(216, 154, 249); ;
+}
+
+.sliding-div {
+    position: absolute;
+    right: -100%; /* Começa fora da tela, à direita */
+    top: 50%; /* Posiciona no meio da altura da container */
+    transform: translateY(-50%); /* Ajuste para centralizar verticalmente */
+    animation: slideRightToLeft 0.7s forwards; /* Aplica a animação */
+  }
+  
+  @keyframes slideRightToLeft {
+    0% {
+      right: -100%; /* Inicia fora da tela */
+    }
+    100% {
+      right: 0.2%; /* Move até o fim da tela, à esquerda */
+    }
+  }
+  
+@media (max-width: 700px) {
+    .mobile-menu-icon {
+        display: block; /* Mostra o ícone no mobile */
+    }
+}

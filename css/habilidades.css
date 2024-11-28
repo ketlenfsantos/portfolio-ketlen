@@ -1,0 +1,218 @@
+.container2{
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.imgHabilidades{
+    align-items: center;
+    width: 650px;
+    margin-bottom: 50px;
+}
+
+
+.icons{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.icons img{
+    width: 80px;
+    cursor: pointer;
+
+}
+
+#html:hover{
+        
+    border: 2px solid #FF6C39;        
+    border-radius: 0.4rem;
+    transform: scale(1.1 );
+    transition: transform 0.5s ease-in-out;
+ 
+
+}
+
+#css:hover{
+    border: 2px solid #1F62AE;
+    border-radius: 0.4rem;
+    transform: scale(1.1 );
+    transition: transform 0.5s ease-in-out;
+
+}
+
+#tail:hover{
+    border: 2px solid #02ADF8;
+    border-radius: 0.4rem;
+    transform: scale(1.1 );
+    transition: transform 0.5s ease-in-out;
+
+}
+
+#boot:hover{
+    border: 2px solid #8D62B5;
+    border-radius: 0.4rem;
+    transform: scale(1.1 );
+    transition: transform 0.5s ease-in-out;
+
+}
+
+
+
+#js:hover{
+    border: 2px solid #F7DF1E;
+    border-radius: 0.4rem;
+    transform: scale(1.1 );
+    transition: transform 0.5s ease-in-out;
+
+}
+
+
+#ts:hover{
+    border:2px solid #3178C6;
+    border-radius: 0.4rem;
+    transform: scale(1.1 );
+    transition: transform 0.5s ease-in-out;
+
+}
+
+#react:hover{
+    border: 2px solid #00D8FF;
+    border-radius: 0.4rem;
+    transform: scale(1.1 );
+    transition: transform 0.5s ease-in-out;
+
+}
+
+#node:hover{
+    border:2px solid #81CF08;
+    border-radius: 0.4rem;
+    transform: scale(1.1 );
+    transition: transform 0.5s ease-in-out;
+
+}
+
+#fig:hover{
+    border: 2px solid #F24E1E;
+    border-radius: 0.4rem;
+    transform: scale(1.1 );
+    transition: transform 0.5s ease-in-out;
+
+}
+
+
+#corel:hover{
+    border: 2px solid #00863F;
+    border-radius: 0.4rem;
+    transform: scale(1.1 );
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.icon-item {
+    position: relative; /* Define o pai para o posicionamento absoluto da descrição */
+    text-align: center; /* Centraliza o conteúdo dentro de cada item */
+  }
+  
+  .description-icons {
+    background-color: rgba(252, 195, 251, 0.349);
+    height: 30px;
+    width: 80px; /* Ajuste para caber o texto */
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    top: 110%; /* Posiciona abaixo do ícone */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    box-sizing: border-box;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0; /* Oculta inicialmente */
+    pointer-events: none; /* Previne interações com a descrição */
+  }
+  
+  .icon-item:hover .description-icons {
+    opacity: 1; /* Exibe a descrição ao passar o mouse */
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(5px); /* Efeito de movimento */
+  }
+/* .description-icons{
+    background-color: rgba(252, 195, 251, 0.349);
+    height: 30px;
+    width: 60px;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    top: 95px;
+    left: 10px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out;
+    display: none;
+} */
+
+#css2 {
+
+    position: absolute;
+    top: 95px;
+    left: 10px;
+}
+
+
+
+
+
+@media (max-width: 700px){
+
+ 
+   
+   .imgHabilidades{
+    width: 350px;
+    
+    
+
+   }
+
+   .icons{
+    display: flex;
+    justify-content: center;
+   
+   }
+
+   .icons img {
+    width: 50px;
+   }
+  
+}
+
+@media (max-width: 768px) {
+    .icons {
+      flex-wrap: wrap; /* Permite que os ícones quebrem linha */
+      justify-content: center; /* Centraliza os ícones */
+      gap: 10px; /* Reduz o espaçamento entre os ícones */
+    }
+  
+   
+
+  
+    .description-icons {
+      width: 50px; /* Reduz o tamanho da descrição */
+      font-size: 8px; /* Fonte menor para descrições */
+      top: 100%; /* Ajusta o espaço abaixo do ícone */
+      padding: 5px; /* Mais espaço interno */
+      z-index: 2;
+    }
+  }
