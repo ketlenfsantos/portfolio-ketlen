@@ -109,7 +109,7 @@
 
 #firstProject{
     position: relative;
-    background-image: url(/img/site.png);
+    background-image: url(./img/site.png);
     background-size: cover;
     background-position: center;
   
@@ -125,7 +125,7 @@
 
 #secondProject{
     position: relative;
-    background-image: url(/img/site.png);
+    background-image: url(./img/site.png);
     background-size: cover;
     background-position: center;
     transition: 0.5s ease-in-out;
