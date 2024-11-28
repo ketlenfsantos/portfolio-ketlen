@@ -14,8 +14,8 @@
 
 @font-face {
     font-family: 'Montserrat Alt1';
-    src: url('./fonts/MontserratAlt1-Bold.woff2') format('woff2'),
-         url('./fonts/MontserratAlt1-Bold.woff') format('woff');
+    src: url('../fonts/MontserratAlt1-Bold.woff2') format('woff2'),
+         url('../fonts/MontserratAlt1-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
@@ -99,12 +99,12 @@
 
 @media (max-width: 1000px){
   .firstPage{
-      height: 130vh;
+      height: 600px;
   }
 }
 
 @media (max-width: 700px){
   .firstPage{
-    height: 100vh;
+    height: 500px;
   }
 }
