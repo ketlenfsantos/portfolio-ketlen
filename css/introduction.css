@@ -115,6 +115,7 @@ cursor: pointer;
 
     .information h1{
         font-size: 1.5em;
+        font-family: 'Montserrat Alt 1', sans-serif;
     }
     .information h2{
         font-size: 1em;
@@ -154,7 +155,7 @@ cursor: pointer;
         letter-spacing: 2px; 
         font-weight: 300;
         margin-bottom: 5px;
-        width: 100px;
+        width: 130px;
         height: 25px;
         
     }
