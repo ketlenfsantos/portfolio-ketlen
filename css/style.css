@@ -14,8 +14,8 @@
 
 @font-face {
     font-family: 'Montserrat Alt1';
-    src: url('/fonts/MontserratAlt1-Bold.woff2') format('woff2'),
-         url('/fonts/MontserratAlt1-Bold.woff') format('woff');
+    src: url('./fonts/MontserratAlt1-Bold.woff2') format('woff2'),
+         url('./fonts/MontserratAlt1-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
