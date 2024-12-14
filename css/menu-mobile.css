@@ -65,8 +65,8 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 220px;
-    top: 25px;
+    left: 150px;
+    top: 15px;
     cursor: pointer;
 }
 
@@ -95,4 +95,6 @@
     .mobile-menu-icon {
         display: block; /* Mostra o ícone no mobile */
     }
+
+  
 }
