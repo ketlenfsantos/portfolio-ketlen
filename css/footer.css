@@ -48,9 +48,9 @@
     }
 .contactMe{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    flex-direction: column; /* Deixa os elementos em coluna */
+    align-items: flex-start; /* Alinha à esquerda */
+    gap: 1px; /* Espaçamento entre os itens */
     
 }
     .contactMe p {
@@ -59,7 +59,9 @@
         font-weight: 300;
         cursor: pointer;
         margin-left: 10px;
-    
+        display: flex;
+        align-items: center; /* Mantém ícone e texto alinhados verticalmente */
+        gap: 5px; /* Espaçamento entre ícone e texto */
     }
 
 
