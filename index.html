@@ -39,6 +39,7 @@
       
     <nav class="menu">
       <ul>
+        <li> <a href="#aboutMee"> Início</a></li>
         <li> <a href="#aboutMee"> Sobre Mim </a></li>
           <li> <a href="#habilityMe"> Habilidades </a></li>
           <li> <a href="#portfolioDev"> Projetos </a></li>
@@ -55,7 +56,7 @@
 
      <nav>
       <ul>
-        <li> <a href="aboutMee"> Sobre Mim </a></li>
+        <li> <a href="#aboutMee"> Sobre Mim </a></li>
           <li> <a href="#habilityMe"> Habilidades </a></li>
           <li> <a href="#portfolioDev"> Projetos </a></li>
           <li> <a href="#contactDev"> Contato </a></li>
@@ -96,8 +97,11 @@
 
       <div class="about ">
         <img class="imgabout" src="./img/sobre.svg" alt="Fotografia Dev" >
-        <h1> Me chamo KETLEN, minha missão é transformar ideias em resultados no digital </h1>
-        <p> Sou Desenvolvedora Front-End Júnior. Há dois anos iniciei minha nova trajetória na área de programação, após encerrar o ciclo como Fisioterapeuta. Desde criança, sempre tive afinidade com a tecnologia.<br> Apaixonada por jogos de computador, criava também páginas e conteúdos na internet. Em 2020 tive um pequeno negócio de produtos personalizados, em que eu era a responsável pela criação de designers e gestão de redes sociais</p>
+        <h1> Me chamo KETLEN, sou Desenvolvedora Front-End e entusiasta em Designer Digital</h1>
+        <p> Desde sempre tive afinidade com a tecnologia, há dois anos decidi me dedicar a crescer na área. A união da paixão pelo designer e tecnologia me direcionou para o Desenvolvimento Front-End, e consequentemente 
+          a estudar também a área de desenvolvimento back-end. Além disso, sou responsável pela agência Weinsite, uma ideia criada para ajudar pequenas e grandes marcas a crescer no digital. Tenho como propósito servir as pessoas no meio digital,
+        proporcionando ideias criativas e soluções que promovam resultados por meio das ferramentas que ofereço. Estou disposta a crescer no ramo, e aberta a novas experiências que agreguem ao meu crescimento profissional e pessoal, como também, ansiosa em contribuir
+      com minha criatividade e dedicação em futuros projetos.  </p>
     </div>
 
     </div>
@@ -208,24 +212,29 @@
 
       <div class="slideshow-container-desktop">
 
-        <div class="project" id="firstProject">
-           <button class="btnPortfolio"> Sites </button>
-           
-         
+        <a href="./portfolio.html" >
+        <div class="project projects" id="firstProject">
+           <button class="btnPortfolio"> Desenvolvimento Web </button>
+           <div class="descrição"> <p> Sites | Landing Pages | E-commerce | Blogs</p> <button id="btnVejaMais"> Ver mais </button></div>
+       
         </div>
+      </a>
 
-        <div class="project" id="firstProject">
-          <button class="btnPortfolio"> Apps </button>
-        
+        <div class="project projects" id="firstProject">
+          <button class="btnPortfolio">  Aplicações Web/Mobile  </button>
+          <div class="descrição"> <p> Apps |  Sistemas de Gerenciamento | APIS</p> <button id="btnVejaMais"> Ver mais </button> </div>
        </div>
 
-       <div class="project" id="firstProject">
-        <button class="btnPortfolio"> Portfolios </button>
+       <div class="project projects" id="firstProject">
+        <button class="btnPortfolio"> Design Digital </button>
+        <div class="descrição"> <p> UI/UX Design | Produtos Digitais para Redes Sociais </p> <button id="btnVejaMais"> Ver mais </button></div>
       
      </div>
 
-     <div class="project" id="firstProject">
-      <button class="btnPortfolio">Design Digital </button>
+     <div class="project projects" id="firstProject">
+      <button class="btnPortfolio"> Portfólios Profissionais</button>
+      <div class="descrição"> <p> Corporativos | Individuais</p> <button id="btnVejaMais"> Ver mais </button></div>
+      
     
    </div>
       
@@ -241,31 +250,40 @@
 
       <div class="slideshow-container fadeInDown" data-anime="200">
         <div class="mySlides">
-          <button class="btnPortfolio">Design Digital </button>
+          <button class="btnPortfolio" href="./portfolio.html">Desenvolvimento Web </button>
+          <div class="descriçãoMob"> <p> Sites | Landing Pages | E-commerce | Blogs</p> <button id="btnVejaMais"> Ver mais </button> </div>
+         
         </div>
 
-        <div class="mySlides fade">
-          <button class="btnPortfolio">Design Digital </button>
+        <div class="mySlides project">
+          <button class="btnPortfolio"> Aplicações Web/Mobile </button>
+          <div class="descriçãoMob"> <p> Apps |  Sistemas de Gerenciamento | APIS</p></div>
         </div>
       
         <div class="mySlides fade">
           <button class="btnPortfolio">Design Digital </button>
+          <div class="descriçãoMob"> <p> Apps |  Sistemas de Gerenciamento | APIS</p></div>
         </div>
 
         <div class="mySlides fade">
-          <button class="btnPortfolio">Design Digital </button>
+          <button class="btnPortfolio"> Portfólios Personalizados </button>
+          <div class="descrição"> <p> UI/UX Design | Produtos Digitais para Redes Sociais | Wireframes e Mockups</p></div>
         </div>
         
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>      
+  <a class="next" onclick="plusSlides(1)"> &#10095; </a>   
+  
+  
 </div>
 <!-- The dots/circles -->
 <div style="text-align:center"  class="dotss">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  
 </div>
-</div>
+
 
   </div>
 
@@ -299,6 +317,8 @@
 </footer>
 
 </div>
+
+
 <script src="./javascript/plugins/simple-anime.js"></script>
 <script src="./javascript/script.js"></script>
    </body>

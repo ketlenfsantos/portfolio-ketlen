@@ -25,10 +25,10 @@
     margin-top: 50px;
 }
 
-.project {
+.projects {
     background-size: cover;
-    width: 23rem;
-    height: 13rem;
+    width: 470px;
+    height: 290px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,13 +42,13 @@
 
 
 
-.project:hover{
+.projects:hover{
     transform: scale(1.05 );
     transition: transform 0.7s ease;
 }
 
 
-.project::before{
+.projects::before{
   content: "";
   position: absolute;
   top: 0;
@@ -60,7 +60,7 @@
   
 }
 
-.project:hover::before{
+.projects:hover::before{
   content: "";
   position: absolute;
   top: 0;
@@ -77,31 +77,79 @@
 
 .btnPortfolio {
     z-index: 2 ;
-    background-color: rgba(219, 110, 217, 0.539);
-    border-color: rgba(153, 138, 153, 0.539);
+    background: #9433b47b; /* Fundo escuro com transparência */
+    border-color: rgba(185, 175, 185, 0.539);
     color: rgb(246, 245, 245);
    font-weight: 500;
-   font-size: 0.7em;
+   font-size: 0.65em;
    text-transform: uppercase;
    letter-spacing: 1.8px;
    font-family: 'Fira Sans', sans-serif;
-  margin: auto;
-   width: 180px;
-
+ margin: auto;
+   width: 200px;
    border-radius: 9px ;
    padding: 12px;
    cursor: pointer;
-   
    box-shadow: 2px white;
    align-content: center;
    
    
  }
 
+ .descrição{
+
+position: absolute;
+bottom: 0; /* Alinhado ao fundo */
+left: 0;
+width: 450px;
+display: flex;
+font-size: 0.8em;
+justify-content: space-around;
+align-items: center;
+background: #410555a2; /* Fundo escuro com transparência */
+color: #fff; /* Texto branco */
+text-align: center;
+padding: 15px;
+opacity: 0; /* Inicialmente escondido */
+transform: translateY(100%); /* Fora da área visível */
+transition: all 0.3s ease; /* Efeito suave */
+z-index: 2;
+gap:2px;
+
+
+ }
+
+ .projects:hover .descrição {
+    opacity: 1; /* Aparece */
+    transform: translateY(0); /* Retorna à posição original */
+}
+
+#btnVejaMais{
+width: 80px;
+box-sizing: border-box;
+border-radius: 8px;
+padding: 6px;
+border:none;
+background-color: #e4ccee;
+color: rgb(80, 9, 80);
+cursor: pointer;
+font-family: 'Montserrat', sans-serif;
+font-size: 10px;
+font-weight: 400;
+}
+
+#btnVejaMais:hover{
+
+    background-color: #e68fe9cb;
+    color: white;
+  
+  }
+
  .btnPortfolio.hidden {
     opacity: 0; /* Torna o botão invisível */
     pointer-events: none; /* Impede interações com o botão quando estiver invisível */
-    transition: 0.3s ease-in-out;
+    transition: 0.02s ease-in-out;
+    
 }
 
 

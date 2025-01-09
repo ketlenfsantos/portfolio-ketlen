@@ -1,0 +1,370 @@
+  /* pagina portfolio */
+
+
+  
+  .containerPortfolio {
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+   
+}
+
+
+.divider-project{ 
+  width: 100vw; /* Ocupa a largura total da tela */
+  height: 2px; /* Defina a altura desejada */
+  background: linear-gradient(to right, #FF007A, #7B42FF, #00C9FF); /* Gradiente de cores */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:50px 50px;
+  margin: auto;
+}
+
+.menu-project ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-right: 120px;
+ 
+ 
+}
+
+.menu-project ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+
+
+.menu-project a:hover {
+  
+    color: rgb(229, 203, 243);
+        cursor: pointer;
+    transition: 0.2s ease-in;
+}
+/* .imgPortfolio{
+margin-bottom: 30px;
+width: 630px;
+} */
+
+.menuPort {
+width: 1100px;
+
+align-items: center;
+align-content: center;
+margin: auto;
+
+}
+
+.menuPort ul{
+
+font-size: 10px;
+display: flex;
+gap: 80px;
+font-size: 15px;
+padding: 20px;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
+text-transform: uppercase;
+border-bottom: 2px solid #ffffff; /* Linha fixa abaixo do menu */
+
+}
+
+
+
+
+
+.menuProjeto:hover, .menuProjeto.active {
+  border-bottom: 5px solid #cd90e5; /* Linha fixa abaixo do menu */
+padding-bottom: 18.9px; /* Aumenta a distância entre o texto e a linha */
+  color: #cd90e5;
+}
+
+#containerProjectWebMobile{
+  display: flex;
+  gap: 20px;
+  width: 1250px;
+  justify-content: center;
+  margin-top: 40px;
+  position: relative;
+ 
+}
+
+
+
+.projectPort {
+  position: absolute; /* Necessário para que o z-index funcione */
+  background-size: cover;
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+
+.projectPort:hover{
+  transform: scale(1.05 );
+  transition: transform 0.7s ease-in-out;
+
+}
+
+.projectPort:hover::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.339); /* Cor preta com opacidade */
+  z-index: 2; /* Fica sobre a imagem de fundo */
+
+  
+
+}
+
+
+.divInformation2{
+  display: flex;
+
+}
+
+.btnMais{
+margin-right: -299px;
+box-sizing: border-box;
+border-radius: 8px;
+padding: 6px;
+border:none;
+background-color: #e4ccee;
+color: rgb(80, 9, 80);
+cursor: pointer;
+font-family: 'Montserrat', sans-serif;
+font-size: 10px;
+font-weight: 400;
+}
+
+.btnMais:hover{
+
+  background-color: #e68fe9cb;
+  color: white;
+
+}
+
+.descriptionMobile{
+  /* font-weight: 700;
+  color: rgb(185, 172, 212);
+ margin: auto;
+text-align: center;
+margin-top: 125px; */
+
+position: absolute;
+bottom: 0; /* Alinhado ao fundo */
+left: 0;
+width: 380px;
+display: flex;
+flex-direction: column;
+background: #410555a2; /* Fundo escuro com transparência */
+color: #fff; /* Texto branco */
+text-align: center;
+padding: 10px;
+opacity: 0; /* Inicialmente escondido */
+transform: translateY(100%); /* Fora da área visível */
+transition: all 0.3s ease; /* Efeito suave */
+z-index: 2;
+
+}
+
+
+.bet{
+  width: 50px;
+  margin-left: 170px;
+  margin-bottom: 12px;
+}
+
+.descriptionMobile .ic {
+ margin-bottom: -30px;
+}
+
+.projectPort:hover .descriptionMobile {
+  opacity: 1; /* Aparece */
+  transform: translateY(0); /* Retorna à posição original */
+
+}
+
+
+
+#containerApps {
+  display: none;
+}
+
+
+#containerDesigner{
+display: none;
+}
+
+#containerPortfolios{
+  display: none;
+}
+
+.menu-container{
+  display: none;
+}
+
+
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .menu-container {
+    position: relative;
+    display: block;
+  }
+  
+  .menu-button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ff007b6b, #7b42ff7f, #00c8ff5d); /* Gradiente de cores */
+    color: white;
+    border: none;
+    font-size: 0.75em;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 320px;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  
+  .menu {
+    display: none;
+    position: absolute;
+    top: 37px;
+    left: 0;
+    background-color: #f1f1f1f9;
+    width: 200px;
+    border-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    width: 320px;
+    
+  
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.75em;
+  }
+  
+  .menu a:hover {
+    background-color: #ddd;
+  }
+  
+
+  .menuPort ul {
+    display: none; /* Esconde o menu horizontal no mobile */
+  }
+
+  #projetos {
+    display: flex;
+    justify-content: center;
+    margin-left: -15px;
+    }
+
+  .divider-project nav ul {
+      display: none;
+  }
+  .logo{
+    margin-left: 80px;
+}
+
+.containerPortfolio{
+ 
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* O contêiner ocupa 100% da largura do dispositivo */
+  max-width: 320px; /* Define o limite máximo de largura */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+  padding: 16px; /* Adiciona espaçamento interno */
+  box-sizing: border-box; /* Inclui padding e bordas na largura total */
+  
+}
+
+#containerProjectWebMobile{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#projetos{
+  margin-top: 10px;
+}
+
+.menuPort ul {
+  display: none;
+  align-items: center; /* Centraliza os itens */
+  font-size: 10px;
+  align-items: start;
+  border-left: 2px solid #ffffff; /* Linha fixa abaixo do menu */
+  border-bottom: none;
+  gap: 5px;
+}
+
+.projectPort{
+  align-items: center;
+  width: 320px;
+  height: 200px;
+  
+  border-radius: 5px;
+}
+
+.descriptionMobile{
+  position: absolute;
+bottom: 0; /* Alinhado ao fundo */
+left: 0;
+width: 300px;
+border-bottom-right-radius: 5px;
+display: flex;
+flex-direction: column;
+background: #410555a2; /* Fundo escuro com transparência */
+color: #fff; /* Texto branco */
+text-align: center;
+padding: 10px;
+opacity: 0; /* Inicialmente escondido */
+transform: translateY(100%); /* Fora da área visível */
+transition: all 0.3s ease; /* Efeito suave */
+z-index: 2;
+font-size: 12px;
+}
+
+.btnMais{
+  margin-right: -160px; 
+  margin-top: 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 6px;
+  border:none;
+  background-color: #e4ccee;
+  color: rgb(80, 9, 80);
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  }
+  
+  
+}

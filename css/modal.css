@@ -1,0 +1,280 @@
+
+
+
+ /* Botão para abrir o modal */
+ /* .open-modal {
+
+
+} */
+
+/* O fundo do modal */
+#modal-overlay {
+   display: none; /* Oculto por padrão */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 1, 21, 0.7);
+  z-index: 1000; /* Sempre acima do conteúdo */
+  justify-content: center;
+  align-items: center;
+}
+
+
+.modal{
+  margin-top: -20px;
+
+}
+
+.btnModal{
+  margin-top: -90px;
+ margin-inline-start:10px ;
+ cursor: pointer;
+
+}
+
+
+.btnModal button{
+  margin-top: 20px;
+}
+
+
+/* Botão de fechar */
+#close-modal {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;;
+  
+
+}
+
+
+#modal-content{
+  display: none;
+  background: linear-gradient(to right, #661766, #4319a6, #11053f); /* Gradiente de cores */
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1100px;
+  height: 400px;
+  position: relative;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 3fr 3fr; /* Duas colunas iguais */
+grid-template-rows: 1fr; /* Ajusta a altura da linha automaticamente */
+gap: 20px; /* Espaçamento entre as colunas */
+padding: 20px;
+margin: auto;
+margin-top: 132px;
+  
+}
+
+.texto {
+  background-color: rgba(236, 131, 243, 0.056);
+  width: 500px;
+  height: 335px;
+  margin-top: 12.5px;
+  padding: 20px 30px;
+  /* padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px; */
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+ 
+}
+.texto h2{
+  margin-top: 28px;
+  margin-bottom: 2px;
+  font-family: 'MontSerrat Alt1', sans-serif;
+}
+
+
+.texto p{
+margin-top: 15px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+}
+
+#spn{
+  font-weight: 100;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.texto ul{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+  list-style-type: disc;
+}
+
+.tec{
+  display: flex;
+  margin-top: 12px;
+  background: linear-gradient(to right, #ff007b6b, #7b42ff7f, #00c8ff5d); /* Gradiente de cores */
+  width: 350px;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 12px;
+  font-family: 'MontSerrat', sans-serif;
+  font-weight: 600;
+}
+
+#dat{
+  margin-left: 419px;
+  font-size: 11px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 200;
+font-style: italic
+}
+
+.titulos{
+  margin-bottom: -20px;
+}
+
+.ferramentas{
+  margin-top: -30px;
+}
+
+.ferramentas p{
+  margin-bottom: 8px;
+}
+
+.btnModal{
+  margin-top: -55px;
+  margin-left: -8px;
+  
+}
+
+.btnModal button{
+  background: linear-gradient(to right, #ff007b6b, #7b42ff7f, #00c8ff5d); /* Gradiente de cores */
+  border: none;
+  z-index: 2 ;
+color: rgb(246, 245, 245);
+font-weight: 500;
+font-size: 0.65em;
+text-transform: uppercase;
+letter-spacing: 1.8px;
+font-family: 'Fira Sans', sans-serif;
+margin-inline: 8px;
+width: 170px;
+height: 30px;
+border-radius: 9px ;
+padding: 10px;
+cursor: pointer;
+box-shadow: 2px white;
+align-content: center;
+
+}
+
+.btnModal button:hover{
+ 
+
+
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+
+}
+
+
+
+@media (max-width: 768px) {
+  /* Modal */
+  #modal-content {
+    grid-template-columns: 1fr; /* Coluna única */
+    grid-template-rows: auto; /* Linhas automáticas */
+    padding: 10px;
+    margin-top: 10px;
+    height: 90vh; /* Limita a altura máxima no mobile */
+    overflow-y: auto; /* Adiciona rolagem vertical no mobile também */
+   
+  }
+
+  .modal{
+    margin-top: 20px;
+
+  }
+
+  /* Texto */
+  .texto {
+    width: 80%; /* Ocupa toda a largura disponível */
+    height: auto; /* Ajusta a altura automaticamente */
+    padding: 15px;
+    gap: 10px;
+   margin: auto;
+  }
+
+  .texto h2 {
+    font-size: 18px; /* Fonte menor para títulos */
+    margin-top: 10px;
+    text-align: start;
+  }
+
+  .texto p, 
+  .texto ul {
+    font-size: 12px; /* Fonte menor para texto e listas */
+    text-align: start;
+  }
+
+  #spn {
+    font-size: 12px;
+    text-align: start;
+    display: block; /* Garante que o texto fique em linha separada */
+  }
+
+  /* Botões */
+  .btnModal {
+    display: flex;
+    align-items: center; /* Centraliza os botões */
+    align-content: center;
+    justify-content: center;
+    margin-top: -21px;
+    margin-bottom: -21px;
+   
+
+  }
+
+  .btnModal button {
+    width: 40%; /* Botões ocupam toda a largura disponível */
+    height: 30px; /* Botões um pouco mais altos para toque */
+    font-size: 0.5em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 20px;
+  
+  }
+
+  /* Fechar botão */
+  #close-modal {
+    top: 10px; /* Ajusta a posição para telas menores */
+    right: 20px;
+    font-size: 16px; /* Botão menor para fechar */
+  }
+
+  /* Tecnologias */
+  .tec {
+    width: 100%; /* Largura total */
+    font-size: 10px; /* Fonte menor */
+    padding: 5px; /* Reduz o preenchimento */
+  }
+
+  /* Data */
+  #dat {
+    margin-left: 0; /* Remove margem lateral */
+    text-align: end; 
+    font-size: 10px;
+  }
+}

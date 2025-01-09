@@ -5,11 +5,9 @@
     align-items: center;
     padding: 80px;
     gap: 1px;
-   margin-top: 35px;
+    margin-top: 55px;
 
-    
 
-  
     
 }
 
@@ -108,13 +106,15 @@ cursor: pointer;
 
     .information{
         text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
         max-width: 100%;
+       
+      
     
     }
 
     .information h1{
-        font-size: 1.5em;
+        font-size: 1em;
         
     }
     .information h2{
@@ -134,13 +134,13 @@ cursor: pointer;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         color:#F0F0F0;  
         font-family: 'Fira Sans', sans-serif;
-        font-size: 0.7em;
+        font-size: 0.5em;
         letter-spacing: 2px; 
         font-weight: 300;
         margin-top: 10px;
-        margin-bottom: 10px;
-        width: 150px;
-        height: 30px;
+        margin-bottom: 4px;
+        width: 140px;
+        height: 20px;
         
     }
 
@@ -151,13 +151,13 @@ cursor: pointer;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         color:#F0F0F0;  
         font-family: 'Fira Sans', sans-serif;
-        font-size: 0.6em;
+        font-size: 0.5em;
         letter-spacing: 2px; 
         font-weight: 300;
-        margin-bottom: 5px;
-        width: 150px;
+        margin-bottom: -5px;
+        width: 140px;
         padding: 1px;
-        height: 30px;
+        height: 20px;
         
     }
 

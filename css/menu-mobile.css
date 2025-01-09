@@ -2,6 +2,7 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    margin-right: 80px;
     display: none; /* Escondido por padrão fora do mobile */
 }
 
@@ -18,6 +19,7 @@
     flex-direction: column;
     justify-content: center;
     text-decoration: none;
+   
    
 }
 
@@ -41,6 +43,7 @@
     text-decoration: none;
     color: #ffff;
     font-family: 'Fira Sans', sans-serif;
+
     
     
 }
@@ -65,8 +68,8 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 150px;
-    top: 15px;
+    left: 180px;
+    top: 10px;
     cursor: pointer;
 }
 

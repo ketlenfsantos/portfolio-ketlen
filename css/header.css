@@ -3,14 +3,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:50px 50px;
-    margin: auto;
+    padding:20px;
+    
 }
 
 .logo {
     margin-left: 80px;
-    max-width: 100%;
-    width: 60px;
+    max-width: 50px;
+    max-height: 50px;
+    margin-top: 20px;
+   
   
 }
 
@@ -19,6 +21,7 @@
     flex-wrap: wrap;
     gap: 40px;
     margin-right: 40px;
+        margin-top: 20px;
    
    
 }
@@ -41,6 +44,9 @@
 .containerOne nav ul {
     display: none;
 }
+
+
+
 }
 
 

@@ -89,8 +89,9 @@
     from {opacity: .4}
     to {opacity: 1}
   }
-  
 
+
+ 
   @media (max-width: 700px){
 
     .slideshow-container{
@@ -119,7 +120,7 @@
         background-position: center;
         width: 400px;
         height: 300px;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center; /* Centraliza horizontalmente */
         position: relative; /* Necessário para que o z-index do p funcione */
@@ -131,18 +132,56 @@
         left: 50%; /* Centraliza horizontalmente */
         transform: translate(-50%, -50%); /* Ajusta o ponto de referência para o centro */
         z-index: 2;
-        background-color: rgba(219, 110, 217, 0.539);
-        border-color: rgba(153, 138, 153, 0.539);
-        color: rgb(246, 245, 245);
+        background: #9433b47b; /* Fundo escuro com transparência */
+      border-color: rgba(185, 175, 185, 0.539);
+    color: rgb(246, 245, 245);
         font-weight: 500;
-        font-size: 0.8em;
+        font-size: 0.55em;
         letter-spacing: 1px;
         font-family: 'Fira Sans', sans-serif;
-        width: 150px;
+        width: 190px;
         border-radius: 9px;
         padding: 12px;
         text-align: center;
       }
+
+      .descriçãoMob{
+
+        background: #410555a2; /* Fundo escuro com transparência */
+        color: #fff; /* Texto branco */
+        z-index: 2 ;
+       font-size: 0.65em;
+       font-family: 'Montserrat ', sans-serif;
+       width: 380px;
+       padding: 15px;
+       position: absolute;
+       bottom: 0; /* Alinhado ao fundo */
+       left: 0;
+       display: none;
+       flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+       cursor: pointer;
+       box-shadow: 2px white;
+      text-align: center;
+      z-index: 2;
+      gap:2px;
+   
+    
+     }
+
+     
+ .mySlides:hover .descriçãoMob {
+  opacity: 1; /* Aparece */
+  transform: translateY(0); /* Retorna à posição original */
+  display: flex;
+
+}
+
+     .descriçãoMob:hover .descriçãoMob {
+      display: block; 
+  }
     
 
     .mySlides:hover{
@@ -202,8 +241,5 @@
      width: 100px;
     
     }
-
-
-
-
+    
   }
