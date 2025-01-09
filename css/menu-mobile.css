@@ -19,6 +19,8 @@
     flex-direction: column;
     justify-content: center;
     text-decoration: none;
+    z-index: 1000;
+    overflow: hidden;
    
    
 }
@@ -68,8 +70,8 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 180px;
-    top: 10px;
+    left: 120px;
+    top: 20px;
     cursor: pointer;
 }
 

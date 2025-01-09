@@ -157,7 +157,7 @@
        position: absolute;
        bottom: 0; /* Alinhado ao fundo */
        left: 0;
-       display: none;
+       display: flex;
        flex-direction: row;
       justify-content: space-around;
       align-items: center;
@@ -172,23 +172,23 @@
      }
 
      
- .mySlides:hover .descriçãoMob {
-  opacity: 1; /* Aparece */
-  transform: translateY(0); /* Retorna à posição original */
+ /* .mySlides:hover .descriçãoMob {
+  opacity: 1;
+  transform: translateY(0); 
   display: flex;
 
-}
+} */
 
-     .descriçãoMob:hover .descriçãoMob {
+     /* .descriçãoMob:hover .descriçãoMob {
       display: block; 
   }
-    
+     */
 
-    .mySlides:hover{
+    /* .mySlides:hover{
         transform: scale(1.05 );
         transition: transform 0.7s ease;
     
-    }
+    } */
 
 
     .mySlides::before{

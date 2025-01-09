@@ -198,7 +198,7 @@ align-content: center;
     margin-top: 10px;
     height: 90vh; /* Limita a altura máxima no mobile */
     overflow-y: auto; /* Adiciona rolagem vertical no mobile também */
-   
+   width: 90%;
   }
 
   .modal{
@@ -208,11 +208,13 @@ align-content: center;
 
   /* Texto */
   .texto {
-    width: 80%; /* Ocupa toda a largura disponível */
+    width: 89%; /* Ocupa toda a largura disponível */
     height: auto; /* Ajusta a altura automaticamente */
     padding: 15px;
     gap: 10px;
    margin: auto;
+   margin-top: 20px;
+ 
   }
 
   .texto h2 {
@@ -239,7 +241,7 @@ align-content: center;
     align-items: center; /* Centraliza os botões */
     align-content: center;
     justify-content: center;
-    margin-top: -21px;
+    margin-top: -40px;
     margin-bottom: -21px;
    
 

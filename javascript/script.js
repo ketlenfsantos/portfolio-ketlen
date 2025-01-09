@@ -43,6 +43,8 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
   }
 }
+
+
 // MENU MOBILE
 const menuToggle = document.querySelector('.mobile-menu-icon'); // Ícone do menu hambúrguer
 const menu = document.querySelector('.containerTwoMobile'); // Menu lateral
@@ -71,7 +73,7 @@ document.addEventListener('click', (event) => {
 
 // REMOVER DIV QUANDO PASSAR MOUSE
 const projetos = document.querySelectorAll('.project');
-const projetosMobile = document.querySelectorAll('.mySlides');
+// const projetosMobile = document.querySelectorAll('.mySlides');
 
 projetos.forEach(function(divProjeto) {
   const button = divProjeto.querySelector('.btnPortfolio'); // Seleciona o botão dentro de cada "project"
@@ -85,17 +87,17 @@ projetos.forEach(function(divProjeto) {
   });
 });
 
-projetosMobile.forEach(function(divProjetoMobile) {
-  const buttonMobile = divProjetoMobile.querySelector('.btnPortfolio'); // Seleciona o botão dentro de cada "project"
+// projetosMobile.forEach(function(divProjetoMobile) {
+//   const buttonMobile = divProjetoMobile.querySelector('.btnPortfolio'); // Seleciona o botão dentro de cada "project"
 
-  divProjetoMobile.addEventListener('mouseover', function () {
-    buttonMobile.classList.add('hidden'); // Adiciona a classe "hidden" para esconder o botão com transição
-  });
+//   divProjetoMobile.addEventListener('mouseover', function () {
+//     buttonMobile.classList.add('hidden'); // Adiciona a classe "hidden" para esconder o botão com transição
+//   });
 
-  divProjetoMobile.addEventListener('mouseleave', function () {
-    buttonMobile.classList.remove('hidden'); // Remove a classe "hidden" para mostrar o botão novamente com transição
-  });
-});
+//   divProjetoMobile.addEventListener('mouseleave', function () {
+//     buttonMobile.classList.remove('hidden'); // Remove a classe "hidden" para mostrar o botão novamente com transição
+//   });
+// });
 
 // ANIMAÇÃO SCROLL
 const elements = document.querySelectorAll('[data-anime]');
@@ -130,7 +132,8 @@ animateOnScroll();
 
 
 
-// MODAL - abertura
+// JS PAGINA PORTFOLIO
+
 
 
 
