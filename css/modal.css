@@ -28,15 +28,14 @@
 }
 
 .btnModal{
-  margin-top: -90px;
- margin-inline-start:10px ;
- cursor: pointer;
 
+ cursor: pointer;
 }
 
 
 .btnModal button{
-  margin-top: 20px;
+margin-top: 10px;
+
 }
 
 
@@ -71,7 +70,7 @@ grid-template-rows: 1fr; /* Ajusta a altura da linha automaticamente */
 gap: 20px; /* Espaçamento entre as colunas */
 padding: 20px;
 margin: auto;
-margin-top: 132px;
+margin-top: 98px;
   
 }
 
