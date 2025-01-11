@@ -49,19 +49,25 @@ function showSlides(n) {
 const menuToggle = document.querySelector('.mobile-menu-icon'); // Ícone do menu hambúrguer
 const menu = document.querySelector('.containerTwoMobile'); // Menu lateral
 const closeMenu = document.getElementById('xis'); // Botão de saída
+const body = document.body;
 
 // Adiciona o evento de clique para abrir/fechar o menu
 menuToggle.addEventListener('click', () => {
-  if (menu.style.display === 'none' || menu.style.display === '') {
+  const isMenuVisible = menu.style.display === 'flex';
+
+  if (!isMenuVisible) {
     menu.style.display = 'flex'; // Mostra o menu
+    body.classList.add('lock-scroll'); // Bloqueia a rolagem
   } else {
     menu.style.display = 'none'; // Esconde o menu
+    body.classList.remove('lock-scroll'); // Reativa a rolagem
   }
 });
 
 // Fecha o menu ao clicar no botão "X"
 closeMenu.addEventListener('click', () => {
   menu.style.display = 'none'; // Esconde o menu
+
 });
 
 // Fecha o menu ao clicar fora da área do menu

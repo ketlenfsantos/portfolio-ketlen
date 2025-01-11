@@ -157,8 +157,8 @@ font-weight: 400;
 
 #firstProject{
     position: relative;
-    background: url(../img/site.png);
-    background-size: cover;
+    background: url(../img/1.png);
+    
     background-position: center;
   
     
@@ -173,10 +173,11 @@ font-weight: 400;
 
 #secondProject{
     position: relative;
-    background: url(/img/site.png);
-    background-size: cover;
+    background: url(../img/3.png);
+    
     background-position: center;
-    transition: 0.5s ease-in-out;
+  
+    
 
     
 
@@ -184,11 +185,10 @@ font-weight: 400;
 
 #thirdProject{
     position: relative;
-    background: url(/img/site.png);
-    background-size: cover;
+    background: url(../img/2.png);
+    
     background-position: center;
-    transition: 0.5s ease-in-out;
- 
+  
     
 
 }

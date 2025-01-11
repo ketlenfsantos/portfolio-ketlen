@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio Desenvolvedor Jr e UX Designer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,14 +53,18 @@
 <div class="containerTwoMobile sliding-div">
   <button id="xis"> x </button>
 
-    <nav>
+   
      <ul>
-       <li> <a href="#aboutMee"> Sobre Mim </a></li>
-         <li> <a href="#habilityMe"> Habilidades </a></li>
-         <li> <a href="#portfolioDev"> Projetos </a></li>
-         <li> <a href="#contactDev"> Contato </a></li>
-       </ul>
-   </nav>
+      <li> <a href="./index.html"> Início</a></li>
+      <li> <a href="index.html#aboutMee"> Sobre Mim</a></li>
+        <li> <a href="index.html#habilityMe"> Habilidades </a></li>
+        <li> <a href="index.html#portfolioDev"> Projetos </a></li>
+        <li> <a href="index.html#contactDev"> Contato </a></li>
+      </ul>
+
+
+       
+ 
 
    </div>
   
@@ -70,22 +75,20 @@
 
    <div class="containerPortfolio" aria-label="cards de projetos"> 
 
-    <!-- <div class="imgPortfolio">
-    <img src="./img/portfolio.svg" alt="description portfolio" >
    
-</div>
-    -->
+
 <div class="menuPort">
 
   <ul>
-    <li> <a href="#containerProjectWebMobile" class="menuProjeto"> Desenvolvimento Web</a></li>
-      <li> <a href="#" class="menuProjeto"> Aplicações Web/Mobile </a></li>
+    <li> <a href="#webDesigner" class="menuProjeto" data-target="webDesigner"> Desenvolvimento Web</a></li>
+      <li> <a href="#appsMob" class="menuProjeto" data-target="appsMob"> Aplicações Web/Mobile </a></li>
       <li> <a href="" class="menuProjeto"> Design Digital </a></li>
       <li> <a href=""class="menuProjeto" > Portfólios Profissionais </a></li>
     </ul>
 </div>
 
-
+<!-- container WEB DESIGNER -->
+<div class="containersMenus" id="webDesigner">
 
  <div class="projectPort" id="firstProject">
         
@@ -102,7 +105,7 @@
  </div>
 
  </div>
-
+<!--  -->
  <div class="projectPort" id="firstProject">
         
   <div class="descriptionMobile"> 
@@ -117,6 +120,7 @@
     </div>
  </div>
 </div>
+<!--  -->
 
 <div class="projectPort" id="firstProject">
         
@@ -132,7 +136,58 @@
     </div>
  </div>
 </div>
+</div>
+<!--  -->
+<!-- CONTAINER APPS -->
+<div class="containersMenus" id="appsMob">
 
+  <div class="projectPort" id="firstProject">
+         
+   <div class="descriptionMobile"> 
+     <p> Site - WEINSITE</p>
+     
+     <div class="ic">
+     <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+     </div>
+ 
+     <div class="bet">
+     <button class="open-modal btnMais" > ver mais </button>
+     </div>
+  </div>
+ 
+  </div>
+ 
+  <div class="projectPort" id="firstProject">
+         
+   <div class="descriptionMobile"> 
+     <p> Site - WEINSITE</p>
+     
+     <div class="ic">
+     <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+     </div>
+ 
+     <div class="bet">
+     <button class="open-modal btnMais" > ver mais </button>
+     </div>
+  </div>
+ </div>
+ 
+ <div class="projectPort" id="firstProject">
+         
+   <div class="descriptionMobile"> 
+     <p> Site - WEINSITE</p>
+     
+     <div class="ic">
+     <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+     </div>
+ 
+     <div class="bet">
+     <button class="open-modal btnMais" > ver mais </button>
+     </div>
+  </div>
+ </div>
+
+<div>
 
 
  </div>
@@ -149,30 +204,52 @@
       <div class="menu-container">
         <button class="menu-button" id="menuButton">Menu</button>
         <div class="menu" id="menu">
-          <a href="#opcao1">Desenvolvimento Web</a>
-          <a href="#opcao2">Aplicações Web/Mobile</a>
-          <a href="#opcao3">Design Digital</a>
-          <a href="#opcao3">Portfólios Profissionais</a>
-        </div>
+          <ul>
+         <li class="menu-item" id="desWeb"> <a href="#opcao1">Desenvolvimento Web</a> </li>
+         <li class="menu-item"> <a href="#opcao2">Aplicações Web/Mobile</a> </li>
+          <li class="menu-item"> <a href="#opcao3">Design Digital</a> </li>
+            <li class="menu-item"><a href="#opcao3">Portfólios Profissionais</a> </li>
+        </ul>
+          </div>
       </div>
-  
+      <div class=" oiTchau" id="firstProject">
+        
+        <div class="descriptionMobiles"> 
+          <p> Site - WEINSITE</p>
+          
+          <div class="ic">
+          <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+          </div>
+      
+          <div class="bet">
+          <button class="open-modal btnMais" > ver mais </button>
+          </div>
+       </div>
+      
+       </div>
+    <!-- outro -->
 
+    <div class=" oiTchau" id="firstProject">
+        
+      <div class="descriptionMobiles"> 
+        <p> Site - WEINSITE</p>
+        
+        <div class="ic">
+        <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+        </div>
     
-        <div class="projectPort" id="firstProject">
-        
-          <div class="descriptionMobile"> 
-            <p> Site - WEINSITE</p>
-            
-            <div class="ic">
-            <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
-            </div>
-        
-            <div class="bet">
-            <button class="open-modal btnMais" > ver mais </button>
-            </div>
-         </div>
-        
-         </div>
+        <div class="bet">
+        <button class="open-modal btnMais" > ver mais </button>
+        </div>
+     </div>
+    
+     </div>
+  
+      
+       </div>
+      
+    
+     
 
 
 
@@ -249,6 +326,7 @@
   
     
     <script>
+
 const openModalBtn = document.querySelectorAll('.open-modal');
 const closeModalBtn = document.getElementById('close-modal');
 const modal = document.getElementById("modal-overlay");
@@ -285,11 +363,23 @@ document.addEventListener('keydown', (e) => {
 
 const menuButton = document.getElementById("menuButton");
 const menuMob = document.getElementById("menu");
+const menuItemss = document.querySelectorAll('.menu-item');
 
 // Abre/fecha o menu ao clicar no botão
 menuButton.addEventListener("click", () => {
   menuMob.style.display = menuMob.style.display === "block" ? "none" : "block";
 });
+
+// Fecha o menu quando uma opção for clicada
+menuItemss.forEach(item => {
+  item.addEventListener('click', () => {
+    menuMob.style.display = 'none'; // Oculta o menu
+    console.log(`${item.textContent} foi selecionado`); // Log opcional para ver qual opção foi clicada
+  });
+});
+
+
+
 
 // Fecha o menu se o usuário clicar fora dele
 window.addEventListener("click", (event) => {
@@ -359,6 +449,31 @@ document.addEventListener('click', (event) => {
 
 // para n rolar a tela
 
+
+  // Seleciona todos os itens do menu
+  const menuItems = document.querySelectorAll('.menuProjeto');
+  
+  // Seleciona todos os containers
+  const containers = document.querySelectorAll('.containersMenus');
+
+
+  menuItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault(); // Previne comportamento padrão do link
+
+      // Remove a classe 'active' de todos os containers
+      containers.forEach(container => container.classList.remove('active'));
+
+      // Pega o ID do container correspondente
+      const targetID = item.getAttribute('data-target');
+      const targetContainer = document.getElementById(targetID);
+
+      // Adiciona a classe 'active' no container correspondente
+      if (targetContainer) {
+        targetContainer.classList.add('active');
+      }
+    });
+  });
 
 
 

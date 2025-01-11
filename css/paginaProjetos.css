@@ -15,6 +15,8 @@
 }
 
 
+
+
 .divider-project{ 
   width: 100vw; /* Ocupa a largura total da tela */
   height: 2px; /* Defina a altura desejada */
@@ -22,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:50px 50px;
+  padding:50px 70px;
  
 }
 
@@ -93,21 +95,25 @@ padding-bottom: 18.9px; /* Aumenta a distância entre o texto e a linha */
 
 
 .projectPort {
-  position: absolute; /* Necessário para que o z-index funcione */
   background-size: cover;
-  width: 400px;
-  height: 300px;
-  border-radius: 5px;
-  cursor: pointer;
-
+    width: 400px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    transition: 0.5s ease-in-out;
  
 }
 
-/* .projectPort:hover{
+.projectPort:hover{
   transform: scale(1.05 );
-  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease;
 
-} */
+}
 
 .projectPort::before{
   content: "";
@@ -116,8 +122,23 @@ padding-bottom: 18.9px; /* Aumenta a distância entre o texto e a linha */
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.339); /* Cor preta com opacidade */
+  background-color: rgba(0, 0, 0, 0.574); /* Cor preta com opacidade */
   z-index: 2; /* Fica sobre a imagem de fundo */
+  
+
+  
+
+}
+
+
+.projectPort:hover::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: none;
 
   
 
@@ -164,10 +185,20 @@ padding: 10px;
 z-index: 2;
 justify-content: center;
 margin: auto;
-
-
+opacity: 0; /* Inicialmente escondido */
+transform: translateY(100%); /* Fora da área visível */
+transition: all 0.3s ease; /* Efeito suave */
+z-index: 2;
 
 }
+
+.projectPort:hover .descriptionMobile {
+  opacity: 1; 
+  transform: translateY(0); 
+
+}
+
+
 
 .descriptionMobile p {
   width: 150px;
@@ -175,6 +206,7 @@ margin: auto;
   margin-top: 5px;
   margin-bottom: 2px;
 }
+
 
 .bet{
   width: 10px;
@@ -196,11 +228,9 @@ margin: auto;
 }
 
 
-/* .projectPort:hover .descriptionMobile {
-  opacity: 1; 
-  transform: translateY(0); 
 
-} */
+
+
 
 
 
@@ -228,13 +258,17 @@ display: none;
 
 }
 
+.oiTchau{
+  display: none;
+}
+
 
 /* MOBILE */
 
 @media (max-width: 768px) {
   .menu-container {
     
-    margin-top: -390px;
+    margin-top: -600px;
     margin-bottom: 10px;
     position: relative; /* Permite que o menu seja posicionado em relação ao botão */
     display: inline-block; /* Garante que o botão e o menu se alinhem corretamente */
@@ -254,13 +288,12 @@ display: none;
     width: 320px;
     font-family: 'Fira Sans', sans-serif;
     z-index: 1000; /* Garante que o menu fique acima de todos os outros elementos */
-    
+    letter-spacing: 1.5px;
 
   }
   
   .menu {
     display: none;
-    position: absolute;
     top: 37px;
     left: 0;
     background-color: #f1f1f1f9;
@@ -274,6 +307,17 @@ display: none;
     left: 0;
     z-index: 1000; /* Garante que o menu fique acima de todos os outros elementos */
   }
+  .menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-right: 40px;
+   
+    
+     }
+     
   
   .menu a {
     display: block;
@@ -293,7 +337,8 @@ display: none;
   .menu a:hover {
     background-color: #ddd;
   }
-  
+
+ 
 
   .menuPort ul {
     display: none; /* Esconde o menu horizontal no mobile */
@@ -321,11 +366,31 @@ display: none;
   width: 100%;
   height: 100vh;
   justify-content: center;
+  margin-top:100px
+  
  
  
 }
 
   
+
+.oiTchau{
+
+  background-size: cover;
+  align-items: center;
+  width: 320px;
+  height: 200px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  transition: 0.5s ease-in-out;
+
+}
 
 #projetos{
   margin-top: 10px;
@@ -341,15 +406,12 @@ display: none;
   gap: 5px;
 }
 
-.projectPort{
-  align-items: center;
-  width: 320px;
-  height: 200px;
-  
-  border-radius: 5px;
-}
 
-.descriptionMobile{
+
+
+
+.descriptionMobiles{
+  display: block;
   position: absolute;
 bottom: 0; /* Alinhado ao fundo */
 left: 0;
@@ -357,11 +419,10 @@ width: 300px;
 border-bottom-right-radius: 5px;
 display: flex;
 flex-direction: column;
-background: #410555a2; /* Fundo escuro com transparência */
+background: #410555a2; 
 color: #fff; /* Texto branco */
 text-align: center;
 padding: 10px;
-
 font-size: 12px;
 }
 

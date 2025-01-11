@@ -1,0 +1,25 @@
+
+
+.containersMenus {
+    
+  display: none;
+  gap: 18px;
+  flex-wrap: wrap;
+  max-width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+ 
+   
+}
+
+
+
+.containersMenus.active {
+    /* Apenas o container ativo será exibido */
+    display: flex;
+ 
+    background: none;
+  }
+
+

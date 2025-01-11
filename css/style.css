@@ -10,6 +10,7 @@
 @import './portfolio1.css';
 @import './paginaProjetos.css';
 @import './modal.css';
+@import './containerProjetos.css';
 
 
 
@@ -28,7 +29,6 @@
     margin:0;
     padding:0 ;
     font-family: 'Montserrat', Arial, Helvetica,  sans-serif; 
-    overflow-x: hidden; /* Impede rolagem lateral */
     overflow-x: hidden; /* Impede rolagem lateral */
     -webkit-font-smooothing: antialiased;
     min-height: 2000px;
