@@ -5,7 +5,7 @@
     align-items: center;
     padding: 80px;
     gap: 1px;
-    margin-top: 55px;
+    margin-top: 15px;
 
 
     
@@ -13,17 +13,18 @@
 
 .information h1{
     color: #F0F0F0;
-    font-size: 1.75em;
+    font-size: 1.5em;
     font-family: 'Montserrat Alt1', sans-serif;
     text-transform: uppercase;
+    margin-bottom: 1px;
 }
 
 .information h2{
     color: #F0F0F0;
-    font-size: 1.9em;
+    font-size: 1.4em;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
     letter-spacing: 1px;
 
 }
@@ -33,6 +34,7 @@
     font-family: "Fira Sans", sans-serif;
     font-weight: 200;
     margin-top: 2px;
+    font-size:1em;
 }
 
 
@@ -49,8 +51,9 @@
     font-weight: 300;
     margin-top: 10px;
     margin-bottom: 5px;
-    width: 235px;
+    width: 170px;
     height: 30px;
+    font-size: 0.68em;
     
 }
 
@@ -78,7 +81,8 @@
     font-weight: 300;
     text-transform: uppercase;
     height: 30px;
-    width: 235px;
+    width: 170px;
+    font-size: 0.68em;
     
 }
 
@@ -94,9 +98,9 @@
 }
 
 .icon-social {
-margin-top: 20px;
+margin-top: 8px;
 display: flex;
-gap: 15px;
+gap: 10px;
 cursor: pointer;
 }
 

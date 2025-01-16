@@ -5,7 +5,7 @@
   display: none;
   gap: 18px;
   flex-wrap: wrap;
-  max-width: 90%;
+  max-width: 98%;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
@@ -18,8 +18,31 @@
 .containersMenus.active {
     /* Apenas o container ativo será exibido */
     display: flex;
- 
     background: none;
+    margin-top: 100px;
+    height:0px;
   }
 
 
+/* CSS WEBDESGINER */
+
+#firstProjectWeb{
+
+position: relative;
+background: url(../img/img-blogfauna.webp);
+background-size: 100% 100%;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+
+@media (max-width: 768px){
+  .containersMenus {
+    
+    margin-top: 180px;
+   
+     
+  }
+  
+
+}

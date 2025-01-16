@@ -1,119 +1,133 @@
 
-body.lock-scroll {
-    overflow: hidden; /* Remove a capacidade de rolar */
-  }
+
+#modal-overlay3 {
+  display: none; /* Oculto por padrão */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #241fb318;
+  backdrop-filter: blur(10px); /* Efeito de desfoque */
+  -webkit-backdrop-filter: blur(10px); /* Compatibilidade com Safari */
+  z-index: 1000; /* Sempre acima do conteúdo */
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 .mobile-menu-icon {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    margin-right: 80px;
-    display: none; /* Escondido por padrão fora do mobile */
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: auto;
+  display: none; /* Escondido por padrão fora do mobile */
+  width: 50px;
 }
 
 .containerTwoMobile {
-    display: none; /* Esconde o menu por padrão */
-    background-color: #170b3045;
-    backdrop-filter: blur(10px); /* Efeito de desfoque */
-    -webkit-backdrop-filter: blur(10px); /* Compatibilidade com Safari */
-    border: 2px solid rgb(142, 75, 241);
-    width:100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    z-index: 1000;
-    gap: 5px;
-    margin: auto;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-
-   
-   
+  display: none; /* Esconde o menu por padrão */
+  background-color: #170b3045;
+  backdrop-filter: blur(10px); /* Efeito de desfoque */
+  -webkit-backdrop-filter: blur(10px); /* Compatibilidade com Safari */
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  z-index: 1000;
+  gap: 5px;
+  margin-top:180px;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+margin-top: 0;
+ 
+ 
 }
 
 
 .containerTwoMobile ul {
-    color: #ffff;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    margin-top: 150px;
-    z-index: 1001; /* Um nível acima do container para garantir visibilidade */
-    text-align: center;
-    
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 220px;
+  z-index: 1001; /* Um nível acima do container para garantir visibilidade */
+  text-align: center;
+  
 
 
 }
 
 .containerTwoMobile ul li a {
-    font-size: 1.2em;
-    text-decoration: none;
-    color: #ffff;
-    font-family: 'Montserrat', sans-serif;
-    margin-right: 20px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #ffff;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 20px;
 
-    
-    
+  
+  
 }
 
 
 .containerTwoMobile ul li a:hover {
-    color: rgb(251, 146, 225);
-    background: rgba(255, 255, 255, 0.105);
-    padding: 15px;
-    border-radius: 15px;
-    
+  color: rgb(251, 146, 225);
+  background: rgba(255, 255, 255, 0.105);
+  padding: 15px;
+  border-radius: 15px;
+  
 }
-
 
 
 #xis {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    z-index: 1002; /* Um nível acima de tudo */
+  position: absolute;
+  top: 120px;
+  right: 100px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1002; /* Um nível acima de tudo */
 }
 
 #xis:hover{
-    color: rgb(216, 154, 249); ;
+  color: rgb(216, 154, 249); ;
 }
 
 .sliding-div {
-    position: absolute;
-    right: -100%; /* Começa fora da tela, à direita */
-    top: 50%; /* Posiciona no meio da altura da container */
-    transform: translateY(-50%); /* Ajuste para centralizar verticalmente */
-    animation: slideRightToLeft 0.7s forwards; /* Aplica a animação */
-  }
+  position: absolute;
+  right: -100%; /* Começa fora da tela, à direita */
+  top: 50%; /* Posiciona no meio da altura da container */
+  transform: translateY(-50%); /* Ajuste para centralizar verticalmente */
+  animation: slideRightToLeft 0.7s forwards; /* Aplica a animação */
+}
 
-  body.no-scroll {
-    position: fixed;
-    overflow: hidden;
-    width: 100%;
+body.no-scroll {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    right: -100%; /* Inicia fora da tela */
   }
-  
-  @keyframes slideRightToLeft {
-    0% {
-      right: -100%; /* Inicia fora da tela */
-    }
-    100% {
-      right: 0.2%; /* Move até o fim da tela, à esquerda */
-    }
+  100% {
+    right: 0.2%; /* Move até o fim da tela, à esquerda */
   }
-  
+}
+
 @media (max-width: 700px) {
-    .mobile-menu-icon {
-        display: block; /* Mostra o ícone no mobile */
-    }
+  .mobile-menu-icon {
+      display: block; /* Mostra o ícone no mobile */
+      margin: auto; 
+  }
 
-  
-  
+
+
 }

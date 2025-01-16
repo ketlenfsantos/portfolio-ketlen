@@ -39,33 +39,34 @@
       
     <nav class="menu">
       <ul>
-        <li> <a href="#aboutMee"> Início</a></li>
-        <li> <a href="#aboutMee"> Sobre Mim </a></li>
-          <li> <a href="#habilityMe"> Habilidades </a></li>
-          <li> <a href="#portfolioDev"> Projetos </a></li>
-          <li> <a href="#contactDev"> Contato </a></li>
+        <li> <a href="./index.html"> Início</a></li>
+        <li> <a href="index.html#aboutMee"> Sobre Mim</a></li>
+          <li> <a href="index.html#habilityMe"> Habilidades </a></li>
+          <li> <a href="index.html#portfolioDev"> Projetos </a></li>
+          <li> <a href="index.html#contactDev"> Contato </a></li>
         </ul>
     </nav>
 
     </div>
 
   
-
+<div id="modal-overlay3">
     <div class="containerTwoMobile sliding-div">
    <button id="xis"> x </button>
 
      <nav>
       <ul>
-        <li> <a href="#aboutMee"> Sobre Mim </a></li>
-          <li> <a href="#habilityMe"> Habilidades </a></li>
-          <li> <a href="#portfolioDev"> Projetos </a></li>
-          <li> <a href="#contactDev"> Contato </a></li>
+        <li> <a href="./index.html"> Início</a></li>
+        <li> <a href="index.html#aboutMee"> Sobre Mim</a></li>
+          <li> <a href="index.html#habilityMe"> Habilidades </a></li>
+          <li> <a href="index.html#portfolioDev"> Projetos </a></li>
+          <li> <a href="index.html#contactDev"> Contato </a></li>
         </ul>
     </nav>
 
     </div>
 
- 
+ </div>
   
   </header>
 
@@ -74,15 +75,26 @@
     <h1> Portfólio </h1>
     <h2> Ketlen Figueiredo </h2>
     <p id="title"> Desenvolvedora Front-end | Design Digital </p>
-    <button class="btnInformation"> <a href="#portfolioDev">SAIBA MAIS </a> </button>
-    <button class="btnCurriculo"> Download Currículo </button>
+    <button class="btnInformation"> <a href="#btnModalInit">SAIBA MAIS </a> </button>
+    <button class="btnCurriculo open-modal"> Download Currículo </button>
     <div class="icon-social">
 
-      <i class="fa-brands fa-github" style="color: #ffffff;"></i>
-      <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
-      <i class="fa-solid fa-envelope" style="color: #fafafa;"></i>
+      <a href="https://github.com/ketlenfsantos"><i class="fa-brands fa-github" style="color: #ffffff;"></i> </a>
+      <a href="www.linkedin.com/in/ketlenfsantos"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i> </a>
     </div>
   </div>
+
+  <div id="modal-overlay2">
+  
+    <div class="btnModalInit">
+  <a href="./assets/pdf/Currículo Ketlen Figueiredo - PT-BR.pdf" target="_blank"><button> Currículo em Português </button></a>
+  <a href="./assets/pdf/Resume Ketlen Figueiredo - EN.pdf" target="_blank"><button> Resume in English </button></a>
+</div>
+
+
+<button id="close-modal"> x </button>
+    </div>
+
 
 </div>
  </div> 
@@ -206,86 +218,477 @@
 <!-- PROJETOS -->
 
 <div class="portfolio fadeInDown" data-anime="200" id="portfolioDev" >
-    <div class="imgPortfolio">
-      <img class="img" src="./img/portfolio.svg" alt="description hability">
-      </div>
+  <div class="imgPortfolio">
+    <img class="img" src="./img/portfolio.svg" alt="description hability">
+    </div>
 
-      <div class="slideshow-container-desktop">
 
-        <a href="./portfolio.html" >
-        <div class="project projects" id="firstProject">
-           <button class="btnPortfolio"> Desenvolvimento Web </button>
-           <div class="descrição"> <p> Sites | Landing Pages | E-commerce | Blogs</p> <button id="btnVejaMais" href="#desWeb">  Ver mais </button></div>
+      <!--  WEB DESIGNER -->
+
+      <div class="title fadeInLeft" data-anime="200">
+        <h1>Desenvolvimento Web</h1>
+       </div> 
        
-        </div>
-      </a>
+      <div class="containerdosProjetos">
 
-        <div class="project projects" id="secondProject">
-          <button class="btnPortfolio">  Aplicações Web/Mobile  </button>
-          <div class="descrição"> <p> Apps |  Sistemas de Gerenciamento | APIS</p> <button id="btnVejaMais"> Ver mais </button> </div>
-       </div>
+        <!-- projetos webdesigner -->
+ 
+    <div class="projetosTodos">
 
-       <div class="project projects" id="thirdProject">
-        <button class="btnPortfolio"> Design Digital </button>
-        <div class="descrição"> <p> UI/UX Design | Produtos Digitais para Redes Sociais </p> <button id="btnVejaMais"> Ver mais </button></div>
+          <div class="project projects" id="firstProject">
       
+             <div class="descrição">
+               <p> Blog | Fauna Brasil</p> 
+
+               <div class="ic">
+                <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+                </div>
+               
+               <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+              
+              </div>
+      
+          </div>
+        </div> 
+<!--  -->
+
+<div class="project projects" id="firstProject">
+      
+  <div class="descrição">
+    <p> Blog | Fauna Brasil</p> 
+
+    <div class="ic">
+     <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+     </div>
+    
+    <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+   
+   </div>
+
+</div>
+
+       <!--  -->
+
+       <div class="project projects" id="firstProject">
+      
+        <div class="descrição">
+          <p> Blog | Fauna Brasil</p> 
+
+          <div class="ic">
+           <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+           </div>
+          
+          <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+         
+         </div>
+ 
+     </div>
+     
+   </div> 
+   
+     
+
+<!-- CONTAINER PROJETOS APP -->
+
+<div class="title fadeInLeft" data-anime="200">
+  <h1>Aplicações Mobile</h1>
+ </div>
+ <div class="containerdosProjetos">
+
+  <!-- projetos DE APPS -->
+
+<div class="projetosTodos">
+
+  <div class="project projects" id="firstProject">
+      
+    <div class="descrição">
+      <p> Blog | Fauna Brasil</p> 
+
+      <div class="ic">
+       <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+       </div>
+      
+      <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+     
      </div>
 
-     <div class="project projects" id="firstProject">
-      <button class="btnPortfolio"> Portfólios Profissionais</button>
-      <div class="descrição"> <p> Corporativos | Individuais</p> <button id="btnVejaMais"> Ver mais </button></div>
+ </div>
+  </div> 
+<!--  -->
+
+<div class="project projects" id="firstProject">
       
+  <div class="descrição">
+    <p> Blog | Fauna Brasil</p> 
+
+    <div class="ic">
+     <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+     </div>
     
+    <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+   
    </div>
+
+</div>
+
+ <!--  -->
+ <div class="project projects" id="firstProject">
       
+  <div class="descrição">
+    <p> Blog | Fauna Brasil</p> 
 
+    <div class="ic">
+     <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+     </div>
     
-        
+    <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+   
+   </div>
 
-        </div>
+</div>
+</div> 
+
+
+  <div class="title fadeInLeft" data-anime="200">
+    <h1>Design Digital</h1>
+   </div>
+  <!-- CONTAINER DESIGNER -->
+
+  <div class="containerdosProjetos">
+
+    <!-- projetos webdesigner -->
+
+<div class="projetosTodos">
+
+  <div class="project projects" id="firstProject">
+      
+    <div class="descrição">
+      <p> Blog | Fauna Brasil</p> 
+
+      <div class="ic">
+       <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+       </div>
+      
+      <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+     
+     </div>
+
+ </div>
+    </div> 
+<!--  -->
+
+<div class="project projects" id="firstProject">
+      
+  <div class="descrição">
+    <p> Blog | Fauna Brasil</p> 
+
+    <div class="ic">
+     <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+     </div>
+    
+    <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+   
+   </div>
+
+</div>
+
+   <!--  -->
+   <div class="project projects" id="firstProject">
+      
+    <div class="descrição">
+      <p> Blog | Fauna Brasil</p> 
+
+      <div class="ic">
+       <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+       </div>
+      
+      <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+     
+     </div>
+
+ </div>
+ 
+</div> 
+
+    <div class="title fadeInLeft" data-anime="200">
+      <h1>Portfólios Profissionais</h1>
+     </div>
+
+    <!-- container PORTFOLIO -->
+
+    <div class="containerdosProjetos">
+
+      <!-- PORTFOLIO-->
+
+  <div class="projetosTodos">
+
+    <div class="project projects" id="firstProject">
+      
+      <div class="descrição">
+        <p> Blog | Fauna Brasil</p> 
+
+        <div class="ic">
+         <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+         </div>
+        
+        <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+       
+       </div>
+
+   </div>
+      </div> 
+<!--  -->
+
+<div class="project projects" id="firstProject">
+      
+  <div class="descrição">
+    <p> Blog | Fauna Brasil</p> 
+
+    <div class="ic">
+     <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+     </div>
+    
+    <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+   
+   </div>
+
+</div>
+
+     <!--  -->
+     <div class="project projects" id="firstProject">
+      
+      <div class="descrição">
+        <p> Blog | Fauna Brasil</p> 
+
+        <div class="ic">
+         <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+         </div>
+        
+        <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+       
+       </div>
+
+   </div>
+   
+ </div> 
+
+
+
+ <!-- MOBILE -->
 
 
 
       <!-- SLIDES MOBILE -->
-
-      <div class="slideshow-container fadeInDown" data-anime="200">
-        <div class="mySlides">
-          <button class="btnPortfolio" href="./portfolio.html">Desenvolvimento Web </button>
-          <div class="descriçãoMob"> <p> Sites | Landing Pages | E-commerce | Blogs</p> <button id="btnVejaMais">  <a href="./portfolio.html" > Ver mais </a> </button> </div>
-         
-        </div>
-
-        <div class="mySlides project">
-          <button class="btnPortfolio"> Aplicações Web/Mobile </button>
-          <div class="descriçãoMob"> <p> Apps |  Sistemas de Gerenciamento | APIS</p></div>
-        </div>
+    
       
-        <div class="mySlides fade">
-          <button class="btnPortfolio">Design Digital </button>
-          <div class="descriçãoMob"> <p> Apps |  Sistemas de Gerenciamento | APIS</p></div>
-        </div>
 
-        <div class="mySlides fade">
-          <button class="btnPortfolio"> Portfólios Personalizados </button>
-          <div class="descrição"> <p> UI/UX Design | Produtos Digitais para Redes Sociais | Wireframes e Mockups</p></div>
-        </div>
+        <div class="slideshow-container fadeInDown" data-anime="200">
+          <div class="titleMobile fadeInLeft" data-anime="200">
+            <h1>Desenvolvimento Web</h1>
+           </div>
+
+
+          <div class="mySlides" >
+
+            <div class="descriçãoMob">
+               <p> Blog | Fauna Brasil</p> 
+               
+               <div class="ic">
+                <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+                </div>
+               <button class="open-modal2" id="btnVejaMais">  Ver mais </button> 
+              
+              </div>
+           
+          </div>
+  
+          
+          <div class="mySlides" >
+
+            <div class="descriçãoMob">
+               <p> Blog | Fauna Brasil</p> 
+               
+               <div class="ic">
+                <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+                </div>
+               <button class="open-modal2" id="btnVejaMais">  Ver mais </button> 
+              
+              </div>
+           
+          </div>
         
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)"> &#10095; </a>   
+          
+          <div class="mySlides" >
+
+            <div class="descriçãoMob">
+               <p> Blog | Fauna Brasil</p> 
+               
+               <div class="ic">
+                <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+                </div>
+               <button class="open-modal2" id="btnVejaMais">  Ver mais </button> 
+              
+              </div>
+           
+          </div>
   
+         
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)"> &#10095; </a>   
+    
+    
+
+
+
+
+
   
+
 </div>
-<!-- The dots/circles -->
-<div style="text-align:center"  class="dotss">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
   
+
+
+<div class="slideshow-container2 fadeInDown">
+  
+  <div class="titleMobile fadeInLeft" data-anime="200">
+    <h1>Apps Mobile</h1>
+   </div>
+
+   <div class="mySlides2" >
+
+    <div class="descriçãoMob">
+       <p> Blog | Fauna Brasil</p> 
+       
+       <div class="ic">
+        <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+        </div>
+       <button class="open-modal2" id="btnVejaMais">  Ver mais </button> 
+      
+      </div>
+   
+  </div>
+
+  <div class="mySlides2" >
+
+    <div class="descriçãoMob">
+       <p> Blog | Fauna Brasil</p> 
+       
+       <div class="ic">
+        <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+        </div>
+       <button class="open-modal2" id="btnVejaMais">  Ver mais </button> 
+      
+      </div>
+   
+  </div>
+
+  <div class="mySlides2" >
+
+    <div class="descriçãoMob">
+       <p> Blog | Fauna Brasil</p> 
+       
+       <div class="ic">
+        <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+        </div>
+       <button class="open-modal2" id="btnVejaMais">  Ver mais </button> 
+      
+      </div>
+   
+  </div>
+
+  <div class="mySlides2" >
+
+    <div class="descriçãoMob">
+       <p> Blog | Fauna Brasil</p> 
+       
+       <div class="ic">
+        <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+        </div>
+       <button class="open-modal2" id="btnVejaMais">  Ver mais </button> 
+      
+      </div>
+   
+  </div>
+
+  
+  
+  <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides2(1)"> &#10095; </a>   
+
 </div>
 
+
+<!-- MODAL  -->
+
+<div id="modal-overlay" class="hide">
+  <!-- div com tudo dentro -->
+      <div id="modal-content" class="hide">
+          <div class="modal"> 
+              <iframe src="https://streamable.com/e/czsaqc?" autoplay=1 frameborder="0" width="100%" height="100%" allowfullscreen=""></iframe>
+
+          </div>
+          
+      
+          <div class="texto"> 
+            <div class="titulos">
+              <h2>Fauna Brasil</h2>
+              <span id="spn">Blog</span>
+  
+              </div>
+  
+              <div class="descriptionProject">
+              <p>
+              
+                Página criada em exercício do módulo de Display Grid do Curso Origamid. A proposta era reproduzir
+                modelo criado pelo professor usando as técnicas ensinadas no módulo. Design e conteúdo de minha
+            
+              </p>
+                 <ul>
+                  <li> - Designer Responsivo (desktop e mobile) </li>
+                  <li> - Efeitos em JavaScript </li>
+                  <li> - Design feito por mim</li>
+                  
+                 </ul>
+  
+                
+                
+                </p>
+                </div>
+  
+                <div class="ferramentas">
+                  <p>          Nesse projeto foram usadas as tecnologias:</p>
+                <div class="tec"> 
+                HTML - CSS - JAVASCRIPT
+                  </div>
+                  
+           </div>
+  
+  
+              <span id="dat"> Agosto de 2024 </span>
+  
+  </div>
+  
+  
+  
+  <div class="btnModal">
+      <a href="https://ketlenfsantos.github.io/blogfaunabrasil/" target=”_blank”><button> Acessar Projeto</button> </a>
+      <a href="https://github.com/ketlenfsantos/blogfaunabrasil.git" target=”_blank”><button> Acessar Repositório</button> </a>
+  </div>
 
   </div>
+
+  <span id="close-modal2"> x </span>
+
+
+</div>
+
+</div>
+</div>
+
+
+
+
 
 
 <!-- FIM PROJETOS-->

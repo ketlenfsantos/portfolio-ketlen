@@ -1,6 +1,11 @@
   /* pagina portfolio */
 
-
+.estrutura.scroll{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
   
   .containerPortfolio {
     
@@ -10,20 +15,14 @@
     max-width: 90%;
     justify-content: center;
     align-items: center;
-    margin-top: -50px;
-   
+    margin-top: -70px;
 }
-
-
-
 
 .divider-project{ 
   width: 100vw; /* Ocupa a largura total da tela */
   height: 2px; /* Defina a altura desejada */
   background: linear-gradient(to right, #FF007A, #7B42FF, #00C9FF); /* Gradiente de cores */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+ display: flex;
   padding:50px 70px;
  
 }
@@ -43,28 +42,21 @@
   font-size: 0.9em;
 }
 
-
-
 .menu-project a:hover {
   
     color: rgb(229, 203, 243);
         cursor: pointer;
     transition: 0.2s ease-in;
 }
-/* .imgPortfolio{
-margin-bottom: 30px;
-width: 630px;
-} */
+
 
 .menuPort {
 width: 1100px;
-
 align-items: center;
 align-content: center;
 margin: auto;
 
 }
-
 .menuPort ul{
 
 font-size: 10px;
@@ -81,9 +73,6 @@ border-bottom: 2px solid #ffffff; /* Linha fixa abaixo do menu */
 }
 
 
-
-
-
 .menuProjeto:hover, .menuProjeto.active {
   border-bottom: 5px solid #cd90e5; /* Linha fixa abaixo do menu */
 padding-bottom: 18.9px; /* Aumenta a distância entre o texto e a linha */
@@ -91,11 +80,8 @@ padding-bottom: 18.9px; /* Aumenta a distância entre o texto e a linha */
 }
 
 
-
-
-
 .projectPort {
-  background-size: cover;
+ 
     width: 400px;
     height: 270px;
     display: flex;
@@ -144,12 +130,10 @@ padding-bottom: 18.9px; /* Aumenta a distância entre o texto e a linha */
 
 }
 
-
 .divInformation2{
   display: flex;
 
 }
-
 .btnMais{
 margin-right: -299px;
 box-sizing: border-box;
@@ -198,8 +182,6 @@ z-index: 2;
 
 }
 
-
-
 .descriptionMobile p {
   width: 150px;
   margin:auto;
@@ -217,7 +199,7 @@ z-index: 2;
 
 
 
-.ic{
+.ics{
   margin-top: 2px;
   width: 150px;
   margin:auto;
@@ -226,10 +208,6 @@ z-index: 2;
  gap: 5px;
  justify-content: center;
 }
-
-
-
-
 
 
 
@@ -258,188 +236,89 @@ display: none;
 
 }
 
-.oiTchau{
-  display: none;
-}
 
 
 /* MOBILE */
 
-@media (max-width: 768px) {
-  .menu-container {
-    
-    margin-top: -600px;
-    margin-bottom: 10px;
-    position: relative; /* Permite que o menu seja posicionado em relação ao botão */
-    display: inline-block; /* Garante que o botão e o menu se alinhem corretamente */
+@media (max-width: 768px){
 
+
+  .menu-project{
+    display: none;
   }
 
 
-  
-  .menu-button {
+  .menuPort{
+    display: none;
+  }
+
+  .containerTwoMobile {
+    display: none;
+    
+  }
+
+  .menu-container{
+    display: flex;
+    justify-content: center;
+   
+    margin-top: -55px;
+    
+  }
+
+  #menu-container.active{
+   margin-top: -120px;
+   background: none;
+
+  }
+
+  .menu-button{
+    display: block;
     padding: 10px 20px;
     background: linear-gradient(to right, #ff007b6b, #7b42ff7f, #00c8ff5d); /* Gradiente de cores */
     color: white;
     border: none;
-    font-size: 0.75em;
+    font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    width: 320px;
-    font-family: 'Fira Sans', sans-serif;
-    z-index: 1000; /* Garante que o menu fique acima de todos os outros elementos */
-    letter-spacing: 1.5px;
-
+    width: 300px;
+    font-family: "Montserrat", sans-serif;
   }
-  
+
   .menu {
-    display: none;
-    top: 37px;
-    left: 0;
-    background-color: #f1f1f1f9;
-    width: 200px;
-    border-bottom: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 1px;
-    width: 320px;
-    position: absolute; /* Faz com que o menu se posicione sobre os elementos abaixo */
-    top: 100%; /* Posiciona o menu logo abaixo do botão */
-    left: 0;
-    z-index: 1000; /* Garante que o menu fique acima de todos os outros elementos */
-  }
-  .menu ul{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-right: 40px;
-   
-    
-     }
-     
-  
-  .menu a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-    border-bottom: 1px solid #ddd;
-    cursor: pointer;
-    text-align: center;
-    font-size: 0.75em;
+    position: absolute;
+    width: 300px;
+    left: 10;
+    background-color: #4f576c7e;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 40px;
+ 
   }
 
-  .menu.show {
-    display: block;
-  }
-  
-  .menu a:hover {
-    background-color: #ddd;
+  .menu.show{
+    opacity: 1;
+    visibility: visible;
   }
 
- 
-
-  .menuPort ul {
-    display: none; /* Esconde o menu horizontal no mobile */
-  }
-
- 
-  .divider-project nav ul {
-      display: none;
-  }
-  .logo{
-    margin-left: 50px;
-}
-
-.containerPortfolio{
- 
-  display: none;
-}
-
-#containerProjectWebMobile{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  margin-top:100px
-  
- 
- 
-}
-
-  
-
-.oiTchau{
-
-  background-size: cover;
-  align-items: center;
-  width: 320px;
-  height: 200px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 5px;
-  flex-wrap: wrap;
-  transition: 0.5s ease-in-out;
-
-}
-
-#projetos{
-  margin-top: 10px;
-}
-
-.menuPort ul {
-  display: none;
-  align-items: center; /* Centraliza os itens */
-  font-size: 10px;
-  align-items: start;
-  border-left: 2px solid #ffffff; /* Linha fixa abaixo do menu */
-  border-bottom: none;
-  gap: 5px;
-}
-
-
-
-
-
-.descriptionMobiles{
-  display: block;
-  position: absolute;
-bottom: 0; /* Alinhado ao fundo */
-left: 0;
-width: 300px;
-border-bottom-right-radius: 5px;
+.menu-item {
+  color: #ffffff;
 display: flex;
-flex-direction: column;
-background: #410555a2; 
-color: #fff; /* Texto branco */
-text-align: center;
-padding: 10px;
-font-size: 12px;
+justify-content: center;
+padding: 15px;
+font-size: 1em;
+cursor: pointer;
 }
 
-.btnMais{
-  margin-right: -160px; 
-  margin-top: 8px;
-  box-sizing: border-box;
-  border-radius: 8px;
-  padding: 6px;
-  border:none;
-  background-color: #e4ccee;
-  color: rgb(80, 9, 80);
-  cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  font-weight: 400;
-  }
-  
-  
+.menu-item:HOVER{
+  background-color: rgba(218, 178, 227, 0.393);
+}
+
+
+
 }

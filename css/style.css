@@ -11,6 +11,8 @@
 @import './paginaProjetos.css';
 @import './modal.css';
 @import './containerProjetos.css';
+@import './projetosPortfolio.css';
+
 
 
 
@@ -35,6 +37,13 @@
     color: white;
 
   }
+  
+.tudo.scroll{
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+}
 
   h1,h2,h3,p{
     margin: 0px;
