@@ -161,7 +161,7 @@ document.addEventListener('click', (event) => {
 menuItems.forEach(item => {
   item.addEventListener('click', () => {
     menu.style.display = 'none'; // Esconde o menu
-    modal3.style.display = 'none'; // Esconde o modal
+    // modal3.style.display = 'none'; // Esconde o modal
   });
 });
 
