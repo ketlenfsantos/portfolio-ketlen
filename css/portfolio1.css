@@ -146,7 +146,7 @@
         display: none;
     }
     .mySlides {
-        background-image: url(/img/site.png);
+        background-image: url(../img/site.png);
         background-size: cover;
         background-position: center;
         width: 400px;
@@ -162,7 +162,7 @@
 
 
       .mySlides2 {
-        background-image: url(/img/site.png);
+        background-image: url(../img/site.png);
         background-size: cover;
         background-position: center;
         width: 400px;
