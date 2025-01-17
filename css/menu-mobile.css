@@ -14,9 +14,7 @@
 
 .containerTwoMobile {
   display: none; /* Esconde o menu por padrão */
-  background-color: #170b3045;
-  backdrop-filter: blur(10px); /* Efeito de desfoque */
-  -webkit-backdrop-filter: blur(10px); /* Compatibilidade com Safari */
+
   width:100vw;
   height: 100vh;
   display: flex;
