@@ -116,7 +116,7 @@ body.no-scroll {
 
   
 #modal-overlay3 {
-  
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
