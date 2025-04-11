@@ -58,8 +58,9 @@ left: 0;
   }
 
   img{
-    max-width: 100%; /*n cresce infinitamente a imagem*/
+    max-width: 80%; /*n cresce infinitamente a imagem*/
     display: block;
+    margin: auto;
   }
 
   .fadeInDown {
@@ -103,20 +104,17 @@ left: 0;
   background-repeat: no-repeat;
   width: 100vw; 
   height: 100vh;
+  
  
 }
 
 
 
 @media (max-width: 1200px){
-  .firstPage{
-    height: 100vh;
-  }
+
 }
 
 @media (max-width: 700px){
-  .firstPage{
-    height: 100vh;
-  }
+  
 }
 

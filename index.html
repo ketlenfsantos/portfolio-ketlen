@@ -75,9 +75,9 @@
     <h1> Portfólio </h1>
     <h2> Ketlen Figueiredo </h2>
     <p id="title"> Desenvolvedora Front-end | Design Digital </p>
-    <button class="btnInformation"> <a href="#btnModalInit">SAIBA MAIS </a> </button>
-    <button class="btnCurriculo open-modal"> Download Currículo </button>
-    <div class="icon-social">
+    <button class="btnInformation"> <a href="#portfolioDev">SAIBA MAIS </a> </button>
+    <button class="btnCurriculo open-modal" href="btnModalInit"> Download Currículo </button>
+    <div class="icon-social" ">
 
       <a href="https://github.com/ketlenfsantos"><i class="fa-brands fa-github" style="color: #ffffff;"></i> </a>
       <a href="www.linkedin.com/in/ketlenfsantos"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i> </a>
@@ -86,7 +86,7 @@
 
   <div id="modal-overlay2">
   
-    <div class="btnModalInit">
+    <div  class="btnModalInit modalInit">
   <a href="./assets/pdf/Currículo Ketlen Figueiredo - PT-BR.pdf" target="_blank"><button> Currículo em Português </button></a>
   <a href="./assets/pdf/Resume Ketlen Figueiredo - EN.pdf" target="_blank"><button> Resume in English </button></a>
 </div>
@@ -107,7 +107,7 @@
     <img src="./img/foto.png" class="imgMe">
    
 
-      <div class="about ">
+      <div class="about">
         <img class="imgabout" src="./img/sobre.svg" alt="Fotografia Dev" >
         <h1> Me chamo KETLEN, sou Desenvolvedora Front-End e entusiasta em Designer Digital</h1>
         <p> Desde sempre tive afinidade com a tecnologia, há dois anos decidi me dedicar a crescer na área. A união da paixão pelo designer e tecnologia me direcionou para o Desenvolvimento Front-End, e consequentemente 
@@ -241,10 +241,10 @@
                <p> Blog | Fauna Brasil</p> 
 
                <div class="ic">
-                <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+                 <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i>
                 </div>
                
-               <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+               <button class="open-modal2"  id="btnVejaMais" data-modal="fauna-brasil">  Ver mais </button>
               
               </div>
       
@@ -252,16 +252,16 @@
         </div> 
 <!--  -->
 
-<div class="project projects" id="firstProject">
+<div class="project projects" id="secondProjects">
       
   <div class="descrição">
-    <p> Blog | Fauna Brasil</p> 
+    <p> Aplicação - toDo </p> 
 
     <div class="ic">
-     <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+     <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i> <i class="fa-brands fa-node-js" style="color: #7b42ff;"></i>
      </div>
     
-    <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+    <button class="open-modal2"  id="btnVejaMais" data-modal="meu-projeto">  Ver mais </button>
    
    </div>
 
@@ -278,7 +278,7 @@
            <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
            </div>
           
-          <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+          <button class="open-modal2"  id="btnVejaMais" >  Ver mais </button>
          
          </div>
  
@@ -299,20 +299,20 @@
 
 <div class="projetosTodos">
 
-  <div class="project projects" id="firstProject">
+  <div class="project projects" id="dt-project">
       
     <div class="descrição">
-      <p> Blog | Fauna Brasil</p> 
-
+      <p> Aplicação - DT Money </p> 
+  
       <div class="ic">
-       <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
+       <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i> <i class="fa-brands fa-node-js" style="color: #7b42ff;"></i>
        </div>
       
-      <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+      <button class="open-modal2"  id="btnVejaMais" data-modal="dt-money">  Ver mais </button>
      
      </div>
-
- </div>
+  
+  </div>
   </div> 
 <!--  -->
 
@@ -431,7 +431,7 @@
          <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
          </div>
         
-        <button class="open-modal2"  id="btnVejaMais" href="#desWeb">  Ver mais </button>
+        <button class="open-modal2"  id="btnVejaMais" data-target="#modal-fauna">  Ver mais </button>
        
        </div>
 
@@ -488,7 +488,7 @@
            </div>
 
 
-          <div class="mySlides" >
+          <div class="mySlides" id="firstProject" >
 
             <div class="descriçãoMob">
                <p> Blog | Fauna Brasil</p> 
@@ -496,7 +496,7 @@
                <div class="ic">
                 <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
                 </div>
-               <button class="open-modal2" id="btnVejaMais">  Ver mais </button> 
+               <button class="open-modal2" id="btnVejaMais" data-modal="fauna-brasil">  Ver mais </button> 
               
               </div>
            
@@ -506,12 +506,12 @@
           <div class="mySlides" >
 
             <div class="descriçãoMob">
-               <p> Blog | Fauna Brasil</p> 
+               <p> Aplicação - toDo</p> 
                
                <div class="ic">
                 <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
                 </div>
-               <button class="open-modal2" id="btnVejaMais">  Ver mais </button> 
+               <button class="open-modal2" id="btnVejaMais" data-modal="meu-projeto">  Ver mais </button> 
               
               </div>
            
@@ -548,7 +548,7 @@
 </div>
   
 
-
+<!-- MOBILE -->
 <div class="slideshow-container2 fadeInDown">
   
   <div class="titleMobile fadeInLeft" data-anime="200">
@@ -563,7 +563,7 @@
        <div class="ic">
         <i class="fa-brands fa-js" style="color: #7b42ff;"></i> <i class="fa-brands fa-html5" style="color: #7b42ff;"></i><i class="fa-brands fa-css3-alt" style="color: #7b42ff;"></i><i class="fa-brands fa-react" style="color: #724bff;"></i>
         </div>
-       <button class="open-modal2" id="btnVejaMais">  Ver mais </button> 
+       <button  class="open-modal2"  id="btnVejaMais">  Ver mais </button> 
       
       </div>
    
@@ -622,65 +622,112 @@
 <!-- MODAL  -->
 
 <div id="modal-overlay" class="hide">
-  <!-- div com tudo dentro -->
-      <div id="modal-content" class="hide">
-          <div class="modal"> 
-              <iframe src="https://streamable.com/e/czsaqc?" autoplay=1 frameborder="0" width="100%" height="100%" allowfullscreen=""></iframe>
+  <div id="modal-content" class="hide">
 
-          </div>
-          
-      
-          <div class="texto"> 
-            <div class="titulos">
-              <h2>Fauna Brasil</h2>
-              <span id="spn">Blog</span>
+      <div style="position:relative; width:100%; height:0px; margin-top:50px; padding-bottom:56.250%"><iframe id="modal-video" allow="fullscreen;autoplay" allowfullscreen height="100%"  width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
+      </div>
   
-              </div>
-  
-              <div class="descriptionProject">
-              <p>
-              
-                Página criada em exercício do módulo de Display Grid do Curso Origamid. A proposta era reproduzir
-                modelo criado pelo professor usando as técnicas ensinadas no módulo. Design e conteúdo de minha
-            
-              </p>
-                 <ul>
-                  <li> - Designer Responsivo (desktop e mobile) </li>
-                  <li> - Efeitos em JavaScript </li>
-                  <li> - Design feito por mim</li>
-                  
-                 </ul>
-  
-                
-                
-                </p>
-                </div>
-  
-                <div class="ferramentas">
-                  <p>          Nesse projeto foram usadas as tecnologias:</p>
-                <div class="tec"> 
-                HTML - CSS - JAVASCRIPT
-                  </div>
-                  
-           </div>
-  
-  
-              <span id="dat"> Agosto de 2024 </span>
-  
-  </div>
-  
-  
-  
-  <div class="btnModal">
-      <a href="https://ketlenfsantos.github.io/blogfaunabrasil/" target=”_blank”><button> Acessar Projeto</button> </a>
-      <a href="https://github.com/ketlenfsantos/blogfaunabrasil.git" target=”_blank”><button> Acessar Repositório</button> </a>
+    
+    <div class="texto"> 
+      <div class="titulos">
+        <h2 id="modal-title"></h2>
+        <span id="modal-category"></span>
+      </div>
+
+      <div class="descriptionProject">
+        <p id="modal-description"></p>
+        <ul id="modal-features"></ul>
+      </div>
+
+      <div class="ferramentas">
+        <p>Nesse projeto foram usadas as tecnologias:</p>
+        <div class="tec" id="modal-technologies"></div>
+      </div>
+
+      <span id="modal-date"></span>
+    </div>
+
+    <div class="btnModal">
+      <a id="modal-link" target="_blank"><button>Acessar Projeto</button></a>
+      <a id="modal-repo" target="_blank"><button>Acessar Repositório</button></a>
+    </div>
   </div>
 
+  <span id="close-modal2">x</span>
+</div>
+
+
+<div id="modal-overlay" class="hide">
+  <div id="modal-content" class="hide">
+  
+    <div style="position:relative; width:100%; height:100px; margin-top:50px; padding-bottom:55.556%">
+      <iframe id="modal-video" allow="fullscreen autoplay" allowfullscreen height="100%" src="https://streamable.com/e/ofn5jv?autoplay=1&muted=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
+    </div>
+
+    
+    <div class="texto"> 
+      <div class="titulos">
+        <h2 id="modal-title"></h2>
+        <span id="modal-category"></span>
+      </div>
+
+      <div class="descriptionProject">
+        <p id="modal-description"></p>
+        <ul id="modal-features"></ul>
+      </div>
+
+      <div class="ferramentas">
+        <p>Nesse projeto foram usadas as tecnologias:</p>
+        <div class="tec" id="modal-technologies"></div>
+      </div>
+
+      <span id="modal-date"></span>
+    </div>
+
+    <div class="btnModal">
+      <a id="modal-link" target="_blank"><button>Acessar Projeto</button></a>
+      <a id="modal-repo" target="_blank"><button>Acessar Repositório</button></a>
+    </div>
   </div>
 
-  <span id="close-modal2"> x </span>
+  <span id="close-modal2">x</span>
+</div>
 
 
+<div id="modal-overlay" class="hide">
+  <div id="modal-content" class="hide">
+
+    <div style="position:relative; width:100%; height:0px; margin-top:50px; padding-bottom:56.250%"><iframe id="modal-video" allow="fullscreen;autoplay" allowfullscreen height="100%"  width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
+    </div>
+
+
+    
+    <div class="texto"> 
+      <div class="titulos">
+        <h2 id="modal-title"></h2>
+        <span id="modal-category"></span>
+      </div>
+
+      <div class="descriptionProject">
+        <p id="modal-description"></p>
+        <ul id="modal-features"></ul>
+      </div>
+
+      <div class="ferramentas">
+        <p>Nesse projeto foram usadas as tecnologias:</p>
+        <div class="tec" id="modal-technologies"></div>
+      </div>
+
+      <span id="modal-date"></span>
+    </div>
+
+    <div class="btnModal">
+      <a id="modal-link" target="_blank"><button>Acessar Projeto</button></a>
+      <a id="modal-repo" target="_blank"><button>Acessar Repositório</button></a>
+    </div>
+  </div>
+
+  <span id="close-modal2">x</span>
 </div>
 
 </div>
@@ -697,7 +744,7 @@
 <!-- CONTATO-->
 <div class="container4"  id="contactDev">
     <div class="imgContato fadeInLeft" data-anime="200">
-    <img src="./img/contact.svg">
+    <img class="img" src="./img/contact.svg">
     </div>
 
 
@@ -722,7 +769,7 @@
 </div>
 
 
-<script src="./javascript/plugins/simple-anime.js"></script>
+  <script src="./javascript/plugins/simple-anime.js"></script>
 <script src="./javascript/script.js"></script>
    </body>
 </html>

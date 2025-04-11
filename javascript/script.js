@@ -251,6 +251,7 @@ openModalCurriculo.forEach(button => {
   });
 });
 
+
 // Quando o botão de fechar modal é clicado
 closeModalBtn.addEventListener('click', () => {
   modal.style.display = "none"; // Fechar o modal
@@ -273,38 +274,110 @@ document.addEventListener('keydown', (e) => {
 // MODAL PROJETOS
 
 //MODAL 
-const openModalBtn = document.querySelectorAll('.open-modal2');
-const closeModalBtn2 = document.getElementById('close-modal2');
-const modal2 = document.getElementById("modal-overlay");
-const modalContent2 = document.getElementById("modal-content");
+const openModalBtns = document.querySelectorAll('.open-modal2');
+const closeModalBtns = document.getElementById('close-modal2');
+const modalOverlay = document.getElementById("modal-overlay");
+const modalContents = document.getElementById("modal-content");
 
-// Quando qualquer um dos botões de abrir modal for clicado
-openModalBtn.forEach(button => {
-  button.addEventListener('click', () => {
-    modal2.style.display = "flex"; // Ativar a exibição do modal
-    
+// Elementos do modal
+const modalTitle = document.getElementById("modal-title");
+const modalCategory = document.getElementById("modal-category");
+const modalDescription = document.getElementById("modal-description");
+const modalFeatures = document.getElementById("modal-features");
+const modalTechnologies = document.getElementById("modal-technologies");
+const modalDate = document.getElementById("modal-date");
+const modalVideo = document.getElementById("modal-video");
+const modalLink = document.getElementById("modal-link");
+const modalRepo = document.getElementById("modal-repo");
+
+// Dados dos projetos
+const projectsData = {
+  "fauna-brasil": {
+    title: "Fauna Brasil",
+    category: "Blog",
+    description: "Página criada em exercício do módulo de Display Grid do Curso Origamid.",
+    features: ["Designer Responsivo (desktop e mobile)", "Efeitos em JavaScript", "Design feito por mim"],
+    technologies: "HTML - CSS",
+    date: "Agosto de 2024",
+    video: "https://streamable.com/e/czsaqc?",
+    link: "https://ketlenfsantos.github.io/blogfaunabrasil/",
+    repo: "https://github.com/ketlenfsantos/blogfaunabrasil.git"
+  },
+  "meu-projeto": {
+    title: "toDo - Gerenciamento de Tarefas",
+    category: "Aplicação Web",
+    description: "Projeto desenvolvido para gerenciar controle de tarefas no estilo to-do list, que contém as seguintes funcionalidades: - Adicionar uma nova tarefa,  - Marcar e desmarcar uma tarefa como concluída -Remover uma tarefa da listage -Mostrar o progresso de conclusão das tarefas",
+    features: ["SEO otimizado", "Design moderno", "Mobile First"],
+    technologies: "HTML - CSS - REACT - TS - VITE - NODE JS",
+    date: "Maio de 2024",
+    video: "https://streamable.com/e/ofn5jv",
+    link: "https://ketlenfsantos.github.io/desafio-to-do/",
+    repo: "https://github.com/meuprojeto"
+  },
+
+  "dt-money": {
+    title: "DT-Money - Transações Financeiras",
+    category: "Aplicação Web",
+    description: "Projeto desenvolvido para prática de perfomances no React, com uso de bibliotecas variadas. O DT-Money é um dashboard de transações financeiras,com entradas e saídas, cadastros, filtros e buscas focadas em uma melhor experiência e acessibilidade para o usuário.",
+    features: ["Design moderno", "Mobile First"],
+    technologies: "HTML - CSS - REACT - TS - VITE - NODE JS",
+    date: "Junho de 2024",
+    video:"https://streamable.com/e/vkxthe",
+    link: "https://03-dt-money-seven.vercel.app/",
+    repo: "https://github.com/ketlenfsantos/transaction-dashboard"
+  }
+
+
+};
+
+// Abrir modal com conteúdo específico
+openModalBtns.forEach(button => {
+  button.addEventListener('click', (event) => {
+    const projectKey = event.target.getAttribute('data-modal');
+    const project = projectsData[projectKey];
+
+    if (project) {
+      modalTitle.textContent = project.title;
+      modalCategory.textContent = project.category;
+      modalDescription.textContent = project.description;
+      
+      // Preencher lista de funcionalidades
+      modalFeatures.innerHTML = "";
+      project.features.forEach(feature => {
+        let li = document.createElement("li");
+        li.textContent = feature;
+        modalFeatures.appendChild(li);
+      });
+
+      modalTechnologies.textContent = project.technologies;
+      modalDate.textContent = project.date;
+      modalVideo.src = project.video;
+      modalLink.href = project.link;
+      modalRepo.href = project.repo;
+      
+      modalOverlay.style.display = "flex"; 
+    }
   });
 });
-    
-    // Quando o botão de fechar modal é clicado
-closeModalBtn2.addEventListener('click', () => {
-  modal2.style.display = "none"; // Fechar o modal
+
+// Fechar o modal
+closeModalBtns.addEventListener('click', () => {
+  modalOverlay.style.display = "none";
 });
 
-// Fechar o modal se o usuário clicar fora do conteúdo (na área do fundo)
-modal2.addEventListener('click', (e) => {
-  if (e.target === modal) { // Verifica se o clique foi no fundo (não no conteúdo)
-    modal2.style.display = "none"; // Fechar o modal
+// Fechar clicando fora do conteúdo
+modalOverlay.addEventListener('click', (e) => {
+  if (e.target === modalOverlay) {
+    modalOverlay.style.display = "none";
   }
 });
 
-// Fechar o modal quando a tecla "Esc" for pressionada
+// Fechar com tecla ESC
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') { // Verifica se a tecla pressionada é "Escape"
-    modal2.style.display = "none"; // Fechar o modal
+  if (e.key === 'Escape') {
+    modalOverlay.style.display = "none";
   }
 });
-
 
 
 

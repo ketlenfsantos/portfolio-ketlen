@@ -1,31 +1,28 @@
 
 .containerDois {
-    width: 100%;
-    max-width: 1250px;
-    display: flex;
-    flex-wrap: wrap; /* Permite que os elementos dentro do contêiner quebrem em linhas */
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    gap: 70px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+gap: 50px;
+padding: 60px;
+justify-items: center;
+
+
 }
 
 .imgMe {
-    width: 350px;
+    width:370px;
     max-width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+  
     
 }
-
 .about {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    
-   
-}
+    align-items: flex-start;
+  }
 
 .about h1 {
     font-size: 1em;
@@ -46,42 +43,26 @@
 
 .imgabout{
     width: 300px;
+    align-items: flex-start;
+
 }
 
-@media (max-width: 900px) {
 
-    .containerDois{
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
- .about {
-    margin-top: -80px;
-    align-items: center;
-    margin-bottom: 100px;
-    padding: 18px;
-
- }
-
- .about h1{
-    font-size: 0.775em;
-    text-align: center;
-    
- }
-
- .about p{
-    font-size: 0.700em;
-    text-align: center;
-    
- }
-
+@media (max-width: 768px) {
  
-.imgabout{
-    width: 200px;
+    .containerDois {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+        gap: 20px; /* Espaçamento entre os itens */
+    
+    }
+.about {
+   margin-top: 15px;
+   text-align: center;
 }
 
-.imgMe {
-    max-width: 300px
-}
+.about h1 {
+    margin-top: 30px;
+    
+ }
 
 }
-

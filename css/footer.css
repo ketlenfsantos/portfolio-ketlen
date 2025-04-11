@@ -19,9 +19,8 @@
 
 .contactMe p {
     font-family: 'Fira Sans', sans-serif;
-
-    font-size: 17px;
-    letter-spacing: 2px;
+    font-size: 0.90rem;
+    letter-spacing: 1px;
     font-weight: 300;
     cursor: pointer;
 }
@@ -31,6 +30,7 @@
     padding: 20px;
     text-align: center;
     font-weight: 300;
+    font-size: 0.70rem;
 }
 
 

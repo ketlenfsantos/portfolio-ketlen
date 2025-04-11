@@ -1,88 +1,83 @@
 /* estilização container principal:  */
 
-.portfolio{
-   
-    margin: auto;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    
-   
-   
-
+.portfolio {
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
 }
 
-.imgPortfolio{
-width: 600px;
+.imgPortfolio {
+  width: 600px;
 }
-
-
 
 /* estilização container dos projetos separados */
 
 .title {
-    padding: 20px;
-    color: rgb(255, 255, 255);
-    font-family: 'Montserrat Alt1', sans-serif;
-    height: 20px;
-    margin-right: 880px;
-    margin-top: 100px;
-    border-radius: 5px;
-    border-bottom: 9px solid transparent;
-    border-image: linear-gradient(to right, rgba(102, 23, 102, 1), rgba(67, 25, 166, 1), rgba(17, 5, 63, 1))1 ;
-    width: 20%;
-    
-   
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-family: 'Montserrat Alt1', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  border-radius: 5px;
+  border-bottom: 9px solid transparent;
+  border-image: linear-gradient(
+      to right,
+      rgba(102, 23, 102, 1),
+      rgba(67, 25, 166, 1),
+      rgba(17, 5, 63, 1)
+    ) 1;
+  width: 100%; /* 100% para a largura se ajustar ao container */
+  max-width: 600px; /* ou qualquer limite máximo de largura */
+  margin-right: 500px; /* Alinha à direita */
+  margin-left: 0; /* Remove a margem direita */
+  margin-top: 60px;
 }
 
 .title h1 {
-    font-size: 1.4em;
-    
+  font-size: 1.4em;
+  margin: 0; /* Remove margens que podem afetar o layout */
 }
-
-.containerdosProjetos{
-
-    width: 90%;
-    display: flex;
-    margin-top: 30px;
-    justify-content: center;
-    align-content: center;
-    gap: 30px;
-    padding: 20px;
+.containerdosProjetos {
+  width: 90%;
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
 .project {
-
-    width: 380px;
-    height: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5px;
-    flex-wrap: wrap;
-    transition: 0.5s ease-in-out;
-    background-size: cover;
+  width: 380px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  transition: 0.5s ease-in-out;
+  background-size: cover;
 }
 
-
-
-
-.project:hover{
-    transform: scale(1.05 );
-    transition: transform 0.7s ease;
+.project:hover {
+  transform: scale(1.05);
+  transition: transform 0.7s ease;
 }
 
-
-.project::before{
-  content: "";
+.project::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -90,220 +85,310 @@ width: 600px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.574); /* Cor preta com opacidade */
   z-index: 2; /* Fica sobre a imagem de fundo */
-  
 }
 
-.project:hover::before{
-  content: "";
+.project:hover::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: none;
+}
 
-  
+.descrição {
+  position: absolute;
+  bottom: 0; /* Alinhado ao fundo */
+  left: 0;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+  justify-content: space-around;
+  align-items: center;
+  background: #410555a2; /* Fundo escuro com transparência */
+  color: #fff; /* Texto branco */
+  text-align: center;
+  padding: 15px;
+  opacity: 0; /* Inicialmente escondido */
+  transform: translateY(100%); /* Fora da área visível */
+  transition: all 0.3s ease; /* Efeito suave */
+  z-index: 2;
+  gap: 2px;
+}
+
+
+span{
+  font-style: italic;
+  font-size: 0.75em;
+  font-weight: 300;
+}
+
+.projects:hover .descrição {
+  opacity: 1; /* Aparece */
+  transform: translateY(0); /* Retorna à posição original */
+}
+
+/* botões
+     */
+
+.btnPortfolio {
+  z-index: 2;
+  background: #9433b47b; /* Fundo escuro com transparência */
+  border-color: rgba(185, 175, 185, 0.539);
+  color: rgb(246, 245, 245);
+  font-weight: 500;
+  font-size: 0.65em;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-family: 'Fira Sans', sans-serif;
+  margin: auto;
+  width: 200px;
+  border-radius: 9px;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 2px white;
+  align-content: center;
+}
+
+#btnVejaMais {
+  width: 60px;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 6px;
+  border: none;
+  background-color: #e4ccee;
+  color: rgb(80, 9, 80);
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  position: absolute;
+  left: 285px;
+  top: 23px;
+}
+
+#btnVejaMais button {
+  width: 20px;
+}
+
+#btnVejaMais:hover {
+  background-color: #e68fe9cb;
+  color: white;
+}
+
+.btnPortfolio.hidden {
+  opacity: 0; /* Torna o botão invisível */
+  pointer-events: none; /* Impede interações com o botão quando estiver invisível */
+  transition: 0.02s ease-in-out;
+}
+
+.ic {
+  width: 100px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+/* DESCRIÇÕES DE CADA PROJETO SEPARADAS */
+
+#firstProject {
+  position: relative;
+  background: url(../img/img-blogfauna.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+#secondProjects {
+  position: relative;
+  background: url(/img/todo.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#secondProject {
+  position: relative;
+  background: url(../img/3.png);
+
+  background-position: center;
+}
+
+#thirdProject {
+  position: relative;
+  background: url(../img/2.png);
+
+  background-position: center;
+}
+
+#fourthProject {
+  position: relative;
+  background: url(/img/site.png);
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s ease-in-out;
+}
+
+#dt-project{
+    position: relative;
+  background: url(/img/dtmoney.png);
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s ease-in-out;
 
 }
 
-.descrição{
-    
-    position: absolute;
-    bottom: 0; /* Alinhado ao fundo */
-    left: 0;
-    width: 350px;
+
+/* 
+@media (min-width: 900px) {
+  
+  .title {
+    padding: 10px;
+    width: 30%;
+    margin-left: 230px;
+  }
+
+  .title h1{
+    font-size: 1.25em;
+  }
+
+
+  .containerdosProjetos {
+    width: 95%;
     display: flex;
-    flex-direction: column;
-    font-size: 0.8em;
-    justify-content: space-around;
-    align-items: center;
-    background: #410555a2; /* Fundo escuro com transparência */
-    color: #fff; /* Texto branco */
-    text-align: center;
-    padding: 15px;
-    opacity: 0; /* Inicialmente escondido */
-    transform: translateY(100%); /* Fora da área visível */
-    transition: all 0.3s ease; /* Efeito suave */
-    z-index: 2;
-    gap:2px;
-    
-    
-     }
-    
-     .projects:hover .descrição {
-        opacity: 1; /* Aparece */
-        transform: translateY(0); /* Retorna à posição original */
-    }
+    margin-top: 30px;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .project {
+    width: 320px;
+    height: 220px;
+  
+  }
+
+  .descrição {
+  
+    width: 290px;
+
+  }
+
+  #btnVejaMais {
+    width: 60px;
+
+    border-radius: 8px;
+    padding: 6px;
+    border: none;
+    background-color: #e4ccee;
+    color: rgb(80, 9, 80);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    position: absolute;
+    left: 250px;
+    top: 25px;
+  }
 
 
 
-    /* botões
-     */
 
-     .btnPortfolio {
-        z-index: 2 ;
-        background: #9433b47b; /* Fundo escuro com transparência */
-        border-color: rgba(185, 175, 185, 0.539);
-        color: rgb(246, 245, 245);
-       font-weight: 500;
-       font-size: 0.65em;
-       text-transform: uppercase;
-       letter-spacing: 1.8px;
-       font-family: 'Fira Sans', sans-serif;
-     margin: auto;
-       width: 200px;
-       border-radius: 9px ;
-       padding: 12px;
-       cursor: pointer;
-       box-shadow: 2px white;
-       align-content: center;
-       
-       
-     }
-
-     #btnVejaMais{
-        width: 60px;
-
-        border-radius: 8px;
-        padding: 6px;
-        border:none;
-        background-color: #e4ccee;
-        color: rgb(80, 9, 80);
-        cursor: pointer;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 10px;
-        font-weight: 400;
-     position: absolute;
-     left: 285px;
-     top:23px;
-        }
-
-        #btnVejaMais button{
-            width: 20px;
-        }
-        
-        #btnVejaMais:hover{
-        
-            background-color: #e68fe9cb;
-            color: white;
-          
-          }
-        
-         .btnPortfolio.hidden {
-            opacity: 0; /* Torna o botão invisível */
-            pointer-events: none; /* Impede interações com o botão quando estiver invisível */
-            transition: 0.02s ease-in-out;
-            
-        }
-
-        .ic {
-     
-            width: 100px;
-            margin-bottom:5px;
-            margin-top: 5px;
-           display: flex;
-           gap: 5px;
-           justify-content: center;
-          }
+}
+ */
 
 
-        /* DESCRIÇÕES DE CADA PROJETO SEPARADAS */
+ @media (max-width: 1200px) {
 
-        #firstProject{
-            position: relative;
-            background: url(../img/1.png);
-            
-            background-position: center;
-          
-            
-        
-        }
-        
-        
-        
-        
-        
-        
-        
-        #secondProject{
-            position: relative;
-            background: url(../img/3.png);
-            
-            background-position: center;
-          
-            
-        
-            
-        
-        }
-        
-        #thirdProject{
-            position: relative;
-            background: url(../img/2.png);
-            
-            background-position: center;
-          
-            
-        
-        }
-        
-        #fourthProject{
-            position: relative;
-            background: url(/img/site.png);
-            background-size: cover;
-            background-position: center;
-            transition: 0.5s ease-in-out;
-          
-            
-        
-        }
-        
-        
-   
-        
-        @media (max-width: 768px){
-            .title{
-                display: none;
-            }
+  .title {
+    padding: 10px;
+    width: 30%;
+    margin-left: -150px;
+  }
 
-            .containerdosProjetos{
-                display: none;
-            }
+  .title h1 {
+    font-size: 1.25em;
+  }
+
+  .containerdosProjetos {
+    width: 95%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 320px;
+    height: 220px;
+  }
+
+  .descrição {
+    width: 290px;
+  }
+
+#btnVejaMais {
+  position: absolute;
+  left: 250px;
+}
+
+}
 
 
-            #btnVejaMais{
-                width: 60px;
-        
-                border-radius: 8px;
-                padding: 6px;
-                border:none;
-                background-color: #e4ccee;
-                color: rgb(80, 9, 80);
-                cursor: pointer;
-                font-family: 'Montserrat', sans-serif;
-                font-size: 10px;
-                font-weight: 400;
-             position: absolute;
-             left: 319px;
-             top:25px;
-                }
-        
-                #btnVejaMais button{
-                    width: 20px;
-                }
-                
-                #btnVejaMais:hover{
-                
-                    background-color: #e68fe9cb;
-                    color: white;
-                  
-                  }
 
-                  
-.imgPortfolio{
+
+
+@media (max-width: 768px) {
+  .title {
+    display: none;
+  }
+
+  .containerdosProjetos {
+    display: none;
+  }
+
+  #btnVejaMais {
+    width: 60px;
+
+    border-radius: 8px;
+    padding: 6px;
+    border: none;
+    background-color: #e4ccee;
+    color: rgb(80, 9, 80);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    position: absolute;
+    left: 319px;
+    top: 25px;
+  }
+
+  #btnVejaMais button {
+    width: 20px;
+  }
+
+  #btnVejaMais:hover {
+    background-color: #e68fe9cb;
+    color: white;
+  }
+
+  .imgPortfolio {
     width: 350px;
     margin-bottom: -22px;
-    }
-                
+  }
 
-        }
+  #firstProject {
+    position: relative;
+    background: url(../img/img-blogfauna.webp);
+    background-size: cover;
+    background-position: center;
+  }
+}

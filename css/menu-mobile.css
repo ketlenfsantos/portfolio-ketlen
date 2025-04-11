@@ -113,10 +113,11 @@ body.no-scroll {
 
 @media (max-width: 700px) {
   .mobile-menu-icon {
-      display: block; /* Mostra o ícone no mobile */
-      margin: auto; 
+   display: flex;
+   justify-content: center;
   }
 
+ 
 
 
 
