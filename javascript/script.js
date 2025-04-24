@@ -325,6 +325,42 @@ const projectsData = {
     video:"https://streamable.com/e/vkxthe",
     link: "https://03-dt-money-seven.vercel.app/",
     repo: "https://github.com/ketlenfsantos/transaction-dashboard"
+  },
+
+  "pizza-shop": {
+    title: "Pizza Shop - Dashboard ",
+    category: "Aplicação Web",
+    description: "Projeto em React, sem frameworks, que funciona como uma Dashboard para lojistas que possuem um restaurante dentro de um aplicativo de delivery, como o iFood, por exemplo. Uma forma do lojista acompanhar as métricas do restaurante, como pedidos mensais e diários. Uso de gráficos, e acompanhamento de pedidos, detalhes, alterações de status. O foco do projeto foi a integração do Front-end com API utilizando React Query para lidar com toda parte de HTTP, cache, interface otimista.",
+    features: ["Design moderno", "Mobile First"],
+    technologies: "HTML - CSS - REACT - TS - VITE - NODE JS",
+    date: "Junho de 2024",
+    video:"https://streamable.com/e/jsmnai",
+    link: "https://03-dt-money-seven.vercel.app/",
+    repo: "https://github.com/ketlenfsantos/transaction-dashboard"
+  },
+
+  "ignite-timer": {
+    title: "Pizza Shop - Dashboard ",
+    category: "Aplicação Web",
+    description: "Projeto em React, sem frameworks, que funciona como uma Dashboard para lojistas que possuem um restaurante dentro de um aplicativo de delivery, como o iFood, por exemplo. Uma forma do lojista acompanhar as métricas do restaurante, como pedidos mensais e diários. Uso de gráficos, e acompanhamento de pedidos, detalhes, alterações de status. O foco do projeto foi a integração do Front-end com API utilizando React Query para lidar com toda parte de HTTP, cache, interface otimista.",
+    features: ["Design moderno", "Mobile First"],
+    technologies: "HTML - CSS - REACT - TS - VITE - NODE JS",
+    date: "Junho de 2024",
+    video:"https://streamable.com/e/jsmnai",
+    link: "https://ignite-timer-sooty-one.vercel.app/",
+    repo: "https://github.com/ketlenfsantos/ignite-timer"
+  },
+
+  "weinsite": {
+    title: "WEINSITE",
+    category: "Site Institucional",
+    description: "Site realizado para agência de produtos digitais. Com foco de apresentação e descrição dos serviços prestados, bem como também catálogo de projetos com imagens em sliders, botões de contato e links para redes sociais. Site responsivo para desktop, tablet e mobile. Foi utilizado framework boostrap.",
+    features: ["Site institucional", "Bootstrap"],
+    technologies: "HTML - BOOTSTRAP - JS - SWIPER",
+    date: "Novembro de 2024",
+    video:"https://streamable.com/e/pjtt36",
+    link: "https://ketlenfsantos.github.io/weinsite/",
+    repo: "https://github.com/ketlenfsantos/weinsite"
   }
 
 

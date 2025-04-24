@@ -34,7 +34,8 @@
       rgba(102, 23, 102, 1),
       rgba(67, 25, 166, 1),
       rgba(17, 5, 63, 1)
-    ) 1;
+    )
+    1;
   width: 100%; /* 100% para a largura se ajustar ao container */
   max-width: 600px; /* ou qualquer limite máximo de largura */
   margin-right: 500px; /* Alinha à direita */
@@ -118,8 +119,7 @@
   gap: 2px;
 }
 
-
-span{
+span {
   font-style: italic;
   font-size: 0.75em;
   font-weight: 300;
@@ -202,9 +202,9 @@ span{
   background-position: center;
 }
 
-#secondProjects {
+#toDoProject {
   position: relative;
-  background: url(/img/todo.png);
+  background: url(/img/todo.webp);
   background-size: cover;
   background-position: center;
 }
@@ -231,15 +231,38 @@ span{
   transition: 0.5s ease-in-out;
 }
 
-#dt-project{
-    position: relative;
-  background: url(/img/dtmoney.png);
+#dt-project {
+  position: relative;
+  background: url(/img/dtmoney.webp);
   background-size: cover;
   background-position: center;
   transition: 0.5s ease-in-out;
-
 }
 
+#pizza-project {
+  position: relative;
+  background: url(/img/pizza.webp);
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s ease-in-out;
+}
+
+#timer-project {
+  position: relative;
+  background: url(/img/ignite.webp);
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s ease-in-out;
+}
+
+#weinsite-project{
+  position: relative;
+  background: url(/img/weinsite.png);
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s ease-in-out;
+}
+}
 
 /* 
 @media (min-width: 900px) {
@@ -301,9 +324,7 @@ span{
 }
  */
 
-
- @media (max-width: 1200px) {
-
+@media (max-width: 1200px) {
   .title {
     padding: 10px;
     width: 30%;
@@ -334,16 +355,11 @@ span{
     width: 290px;
   }
 
-#btnVejaMais {
-  position: absolute;
-  left: 250px;
+  #btnVejaMais {
+    position: absolute;
+    left: 250px;
+  }
 }
-
-}
-
-
-
-
 
 @media (max-width: 768px) {
   .title {
