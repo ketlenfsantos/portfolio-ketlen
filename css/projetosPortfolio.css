@@ -204,7 +204,7 @@ span {
 
 #toDoProject {
   position: relative;
-  background: url(/img/todo.webp);
+  background: url(../img/todo.webp);
   background-size: cover;
   background-position: center;
 }
@@ -225,7 +225,7 @@ span {
 
 #fourthProject {
   position: relative;
-  background: url(/img/site.png);
+  background: url(../img/site.png);
   background-size: cover;
   background-position: center;
   transition: 0.5s ease-in-out;
@@ -233,7 +233,7 @@ span {
 
 #dt-project {
   position: relative;
-  background: url(/img/dtmoney.webp);
+  background: url(../img/dtmoney.webp);
   background-size: cover;
   background-position: center;
   transition: 0.5s ease-in-out;
@@ -241,7 +241,7 @@ span {
 
 #pizza-project {
   position: relative;
-  background: url(/img/pizza.webp);
+  background: url(../img/pizza.webp);
   background-size: cover;
   background-position: center;
   transition: 0.5s ease-in-out;
@@ -249,7 +249,7 @@ span {
 
 #timer-project {
   position: relative;
-  background: url(/img/ignite.webp);
+  background: url(../img/ignite.webp);
   background-size: cover;
   background-position: center;
   transition: 0.5s ease-in-out;
@@ -257,7 +257,7 @@ span {
 
 #weinsite-project{
   position: relative;
-  background: url(/img/weinsite.png);
+  background: url(../img/weinsite.png);
   background-size: cover;
   background-position: center;
   transition: 0.5s ease-in-out;
