@@ -17,6 +17,7 @@
     url('../fonts/MontserratAlt1-Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap; /* Adiciona swap para melhorar o carregamento da fonte */
 }
 
 body,
