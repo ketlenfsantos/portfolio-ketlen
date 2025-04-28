@@ -1,256 +1,208 @@
-
-.introduction{
-
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    gap: 1px;
-    max-width: 100%;        
-
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  gap: 1px;
+  max-width: 100%;
 }
 
-.information{
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    gap: 1px;
-    margin-top: 100px;
-
-   
-    
-
-    
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  margin-top: 100px;
 }
 
-.information h1{
-    color: #F0F0F0;
-    font-size: 1.5em;
-    font-family: 'Montserrat Alt1', sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 1px;
+.information h1 {
+  color: #f0f0f0;
+  font-size: 1.5em;
+  font-family: 'Montserrat Alt1', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1px;
 }
 
-.information h2{
-    color: #F0F0F0;
-    font-size: 1.4em;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 1px;
-    letter-spacing: 1px;
-
+.information h2 {
+  color: #f0f0f0;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1px;
+  letter-spacing: 1px;
 }
 
-#title{
-    color: rgb(239, 231, 233);
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 200;
-    margin-top: 2px;
-    font-size:1em;
+#title {
+  color: rgb(239, 231, 233);
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 200;
+  margin-top: 2px;
+  font-size: 1em;
 }
 
-
-
-.btnInformation{
-  
-    background: none;
-    border: 1px solid;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color:#F0F0F0;  
-    font-family: 'Fira Sans', sans-serif;
-    letter-spacing: 2px; 
-    font-weight: 300;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    width: 170px;
-    height: 30px;
-    font-size: 0.68em;
-    
+.btnInformation {
+  background: none;
+  border: 1px solid;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #f0f0f0;
+  font-family: 'Fira Sans', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 170px;
+  height: 30px;
+  font-size: 0.68em;
 }
 
-.btnInformation:hover{
-   
-
-    color: #F0F0F0;
-    transform: scale(1.1);
-    cursor: pointer;
-    background-color: rgba(240, 248, 255, 0.134);
-    transition: 0.4s ease-in;
-   
+.btnInformation:hover {
+  color: #f0f0f0;
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: rgba(240, 248, 255, 0.134);
+  transition: 0.4s ease-in;
 }
 
-
-.btnCurriculo{
-    display: block;
-    background: none;
-    border: 1px solid;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color:#F0F0F0;  
-    font-family: 'Fira Sans', sans-serif;
-    letter-spacing: 2px; 
-    font-weight: 300;
-    text-transform: uppercase;
-    height: 30px;
-    width: 170px;
-    font-size: 0.68em;
-    
+.btnCurriculo {
+  display: block;
+  background: none;
+  border: 1px solid;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #f0f0f0;
+  font-family: 'Fira Sans', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-transform: uppercase;
+  height: 30px;
+  width: 170px;
+  font-size: 0.68em;
 }
 
-.btnCurriculo:hover{
-   
-
-    color: #F0F0F0;
-    transform: scale(1.1);
-    transition: 0.4s ease-in-out;
-    cursor: pointer;
-    background-color: rgba(240, 248, 255, 0.134);
-   
+.btnCurriculo:hover {
+  color: #f0f0f0;
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  background-color: rgba(240, 248, 255, 0.134);
 }
 
 .icon-social {
-margin-top: 8px;
-display: flex;
-gap: 10px;
-cursor: pointer;
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
 }
 
+@media (max-width: 1200px) {
+  .introduction {
+    margin: auto;
+  }
+  .information {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 15%;
+  }
 
-@media (max-width: 1200px){
-    .introduction{
-       margin: auto;
+  .information h1 {
+    font-size: 1.3em;
+  }
+  .information h2 {
+    font-size: 1.2em;
+  }
 
-    }
-    .information{
-        text-align: center;
-        max-width: 100%;
-        margin-bottom: 15%;
-     
-       
-      
-    
-    }
+  #title {
+    font-size: 0.9em;
+    flex-wrap: nowrap;
+  }
 
-    .information h1{
-        font-size: 1.3em;
-        
-    }
-    .information h2{
-        font-size: 1.2em;
-    }
+  .btnInformation {
+    background: none;
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #f0f0f0;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.5em;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    width: 140px;
+    height: 20px;
+  }
 
-    #title{
-        font-size: 0.9em;
-        flex-wrap: nowrap;
-    }
-
-    .btnInformation {
-  
-        background: none;
-        border: 1px solid;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        color:#F0F0F0;  
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 0.5em;
-        letter-spacing: 2px; 
-        font-weight: 300;
-        margin-top: 10px;
-        margin-bottom: 4px;
-        width: 140px;
-        height: 20px;
-        
-    }
-
-    .btnCurriculo{
-        background: none;
-        border: 1px solid;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        color:#F0F0F0;  
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 0.5em;
-        letter-spacing: 2px; 
-        font-weight: 300;
-        margin-bottom: -5px;
-        width: 140px;
-        padding: 1px;
-        height: 20px;
-        
-    }
-
-
+  .btnCurriculo {
+    background: none;
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #f0f0f0;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.5em;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: -5px;
+    width: 140px;
+    padding: 1px;
+    height: 20px;
+  }
 }
 
-  
-  
+@media (max-width: 700px) {
+  .introduction {
+    margin: auto;
+  }
+  .information {
+    text-align: center;
+    max-width: 100%;
+  }
 
+  .information h1 {
+    font-size: 1em;
+  }
+  .information h2 {
+    font-size: 0.9em;
+  }
 
-@media (max-width: 700px){
+  #title {
+    font-size: 0.8em;
+    flex-wrap: nowrap;
+  }
 
-    .introduction{
-       margin: auto;
+  .btnInformation {
+    background: none;
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #f0f0f0;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.5em;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    width: 140px;
+    height: 20px;
+  }
 
-    }
-    .information{
-        text-align: center;
-        max-width: 100%;
-       
-      
-    
-    }
-
-    .information h1{
-        font-size: 1em;
-        
-    }
-    .information h2{
-        font-size: 0.9em;
-    }
-
-    #title{
-        font-size: 0.8em;
-        flex-wrap: nowrap;
-    }
-
-    .btnInformation {
-  
-        background: none;
-        border: 1px solid;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        color:#F0F0F0;  
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 0.5em;
-        letter-spacing: 2px; 
-        font-weight: 300;
-        margin-top: 10px;
-        margin-bottom: 4px;
-        width: 140px;
-        height: 20px;
-        
-    }
-
-    .btnCurriculo{
-        background: none;
-        border: 1px solid;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        color:#F0F0F0;  
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 0.5em;
-        letter-spacing: 2px; 
-        font-weight: 300;
-        margin-bottom: -5px;
-        width: 140px;
-        padding: 1px;
-        height: 20px;
-        
-    }
-
-
+  .btnCurriculo {
+    background: none;
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #f0f0f0;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.5em;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: -5px;
+    width: 140px;
+    padding: 1px;
+    height: 20px;
+  }
 }
