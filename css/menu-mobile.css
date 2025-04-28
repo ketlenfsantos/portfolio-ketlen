@@ -1,4 +1,3 @@
-  
 #modal-overlay3 {
   position: fixed;
   top: 0;
@@ -12,31 +11,23 @@
   z-index: 999; /* Certifique-se que está acima dos outros elementos */
 }
 
-
-
-
 .mobile-menu-icon {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  margin: auto;
+
   display: none; /* Escondido por padrão fora do mobile */
-  width: 50px;
 }
 
 .containerTwoMobile {
   display: none; /* Esconde o menu por padrão */
-  width:100vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   text-decoration: none;
   gap: 5px;
- 
- 
- 
 }
-
 
 .containerTwoMobile ul {
   color: #ffff;
@@ -46,9 +37,6 @@
   margin-top: 220px;
   /* z-index: 1001; Um nível acima do container para garantir visibilidade */
   text-align: center;
-  
-
-
 }
 
 .containerTwoMobile ul li a {
@@ -57,20 +45,14 @@
   color: #ffff;
   font-family: 'Montserrat', sans-serif;
   margin-right: 20px;
-
-  
-  
 }
-
 
 .containerTwoMobile ul li a:hover {
   color: rgb(251, 146, 225);
   background: rgba(255, 255, 255, 0.105);
   padding: 15px;
   border-radius: 15px;
-  
 }
-
 
 #xis {
   position: absolute;
@@ -84,8 +66,8 @@
   z-index: 1002; /* Um nível acima de tudo */
 }
 
-#xis:hover{
-  color: rgb(216, 154, 249); ;
+#xis:hover {
+  color: rgb(216, 154, 249);
 }
 
 .sliding-div {
@@ -113,14 +95,15 @@ body.no-scroll {
 
 @media (max-width: 700px) {
   .mobile-menu-icon {
-   display: flex;
-   justify-content: center;
+    display: block; /* Mostra o botão no mobile */
   }
 
- 
-
-
-
-
-
+  .containerOne {
+    gap: 0px;
+    display: flex;
+  }
+  .logo img {
+    padding: 0px;
+    margin-right: 0px;
+  }
 }
