@@ -1,7 +1,10 @@
 
 
+
 // Inicializa a animação
 new SimpleAnime();
+
+
 
 // SLIDESHOW
 let slideIndex = 1;
@@ -296,7 +299,7 @@ const projectsData = {
     title: "Fauna Brasil",
     category: "Blog",
     description: "Página criada em exercício do módulo de Display Grid do Curso Origamid.",
-    features: ["Designer Responsivo (desktop e mobile)", "Efeitos em JavaScript", "Design feito por mim"],
+    features: ["- Designer Responsivo (desktop e mobile)", "- Efeitos em JavaScript", "- Design criado por mim"],
     technologies: "HTML - CSS",
     date: "Agosto de 2024",
     video: "https://streamable.com/e/czsaqc?",
@@ -306,9 +309,9 @@ const projectsData = {
   "meu-projeto": {
     title: "toDo - Gerenciamento de Tarefas",
     category: "Aplicação Web",
-    description: "Projeto desenvolvido para gerenciar controle de tarefas no estilo to-do list, que contém as seguintes funcionalidades: - Adicionar uma nova tarefa,  - Marcar e desmarcar uma tarefa como concluída -Remover uma tarefa da listage -Mostrar o progresso de conclusão das tarefas",
-    features: ["SEO otimizado", "Design moderno", "Mobile First"],
-    technologies: "HTML - CSS - REACT - TS - VITE - NODE JS",
+    description: "Projeto desenvolvido para gerenciar controle de tarefas no estilo to-do list, que contém as seguintes funcionalidades:",
+    features: ["- Adicionar uma nova tarefa", "- Marcar e desmarcar uma tarefa como concluída", "- Remover uma tarefa da listagem", "- Mostrar o progresso de conclusão das tarefas"],
+    technologies: "HTML - CSS - REACT - VITE - NODE JS",
     date: "Maio de 2024",
     video: "https://streamable.com/e/ofn5jv",
     link: "https://ketlenfsantos.github.io/desafio-to-do/",
@@ -318,8 +321,8 @@ const projectsData = {
   "dt-money": {
     title: "DT-Money - Transações Financeiras",
     category: "Aplicação Web",
-    description: "Projeto desenvolvido para prática de perfomances no React, com uso de bibliotecas variadas. O DT-Money é um dashboard de transações financeiras,com entradas e saídas, cadastros, filtros e buscas focadas em uma melhor experiência e acessibilidade para o usuário.",
-    features: ["Design moderno", "Mobile First"],
+    description: "Projeto desenvolvido para prática de perfomances no React, com uso de bibliotecas variadas. O DT-Money é um dashboard de transações financeiras com diversas funcionalidades como:",
+    features: ["- Transações Financeiras", "- Filtros por categoria", "- Filtros por data", "- Botões funcionais"],
     technologies: "HTML - CSS - REACT - TS - VITE - NODE JS",
     date: "Junho de 2024",
     video:"https://streamable.com/e/vkxthe",
@@ -330,8 +333,8 @@ const projectsData = {
   "pizza-shop": {
     title: "Pizza Shop - Dashboard ",
     category: "Aplicação Web",
-    description: "Projeto em React, sem frameworks, que funciona como uma Dashboard para lojistas que possuem um restaurante dentro de um aplicativo de delivery, como o iFood, por exemplo. Uma forma do lojista acompanhar as métricas do restaurante, como pedidos mensais e diários. Uso de gráficos, e acompanhamento de pedidos, detalhes, alterações de status. O foco do projeto foi a integração do Front-end com API utilizando React Query para lidar com toda parte de HTTP, cache, interface otimista.",
-    features: ["Design moderno", "Mobile First"],
+    description: "Projeto em React, sem frameworks, que funciona como uma Dashboard para lojistas que possuem um restaurante dentro de um aplicativo de delivery, como o iFood, por exemplo. O foco do projeto foi a integração do Front-end com API utilizando React Query para lidar com toda parte de HTTP, cache, interface otimista. Uma forma do lojista acompanhar as métricas do restaurante, como:",
+    features: ["- Cadastro e Login", "- Acompanhamento de Pedidos mensais e diários", "- Gráficos", "- Detalhes e alterações de status"],
     technologies: "HTML - CSS - REACT - TS - VITE - NODE JS",
     date: "Junho de 2024",
     video:"https://streamable.com/e/jsmnai",
@@ -340,13 +343,13 @@ const projectsData = {
   },
 
   "ignite-timer": {
-    title: "Pizza Shop - Dashboard ",
+    title: "Timer - Pomodoro ",
     category: "Aplicação Web",
-    description: "Projeto em React, sem frameworks, que funciona como uma Dashboard para lojistas que possuem um restaurante dentro de um aplicativo de delivery, como o iFood, por exemplo. Uma forma do lojista acompanhar as métricas do restaurante, como pedidos mensais e diários. Uso de gráficos, e acompanhamento de pedidos, detalhes, alterações de status. O foco do projeto foi a integração do Front-end com API utilizando React Query para lidar com toda parte de HTTP, cache, interface otimista.",
-    features: ["Design moderno", "Mobile First"],
-    technologies: "HTML - CSS - REACT - TS - VITE - NODE JS",
+    description: "Projeto em React para prática de ferramentas como Styled components, React Hook Form, Zod, Hooks, Context API, entre outros. O Ignite Timer é um temporizador de tarefas que possui as seguintes funcionalidades:",
+    features: ["- Tarefas", "- Timer", "- Contagem Regressiva", "- Notificações", "Histórico de tarefas"],
+    technologies: "HTML - CSS - REACT ",
     date: "Junho de 2024",
-    video:"https://streamable.com/e/jsmnai",
+    video:"https://streamable.com/e/bz9541",
     link: "https://ignite-timer-sooty-one.vercel.app/",
     repo: "https://github.com/ketlenfsantos/ignite-timer"
   },
@@ -365,6 +368,9 @@ const projectsData = {
 
 
 };
+
+
+
 
 // Abrir modal com conteúdo específico
 openModalBtns.forEach(button => {
@@ -414,6 +420,7 @@ document.addEventListener('keydown', (e) => {
     modalOverlay.style.display = "none";
   }
 });
+
 
 
 

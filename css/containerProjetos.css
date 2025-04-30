@@ -1,7 +1,4 @@
-
-
 .containersMenus {
-    
   display: none;
   gap: 18px;
   flex-wrap: wrap;
@@ -9,31 +6,25 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
- 
-   
 }
 
-
-
 .containersMenus.active {
-    /* Apenas o container ativo será exibido */
-    display: flex;
-    background: none;
-    margin-top: 100px;
-    height:0px;
-  }
+  /* Apenas o container ativo será exibido */
+  display: flex;
+  background: none;
+  margin-top: 100px;
+  height: 0px;
+}
 
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
 
 /* CSS WEBDESGINER */
 
-
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .containersMenus {
-    
     margin-top: 180px;
-   
-     
   }
-  
-
 }
