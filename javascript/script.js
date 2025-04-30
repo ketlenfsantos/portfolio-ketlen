@@ -20,6 +20,7 @@ showSlides(slideIndex2, "mySlides2", "dot2");
 function plusSlides(n) {
   slideIndex += n;
   showSlides(slideIndex, "mySlides", "dot");
+  
 }
 
 function currentSlide(n) {
@@ -315,7 +316,7 @@ const projectsData = {
     date: "Maio de 2024",
     video: "https://streamable.com/e/ofn5jv",
     link: "https://ketlenfsantos.github.io/desafio-to-do/",
-    repo: "https://github.com/meuprojeto"
+    repo: "https://github.com/ketlenfsantos/desafio-to-do"
   },
 
   "dt-money": {
